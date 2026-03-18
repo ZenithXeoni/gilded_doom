@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "addition": {
+    "item": "gilded_doom:gilded_ingot"
+  },
+  "result": {
+    "item": "gilded_doom:gilded_brute_helmet"
+  }
+}

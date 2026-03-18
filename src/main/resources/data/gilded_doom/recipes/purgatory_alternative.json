@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "gilded_doom:deleted_mod_element"
+    },
+    {
+      "item": "gilded_doom:chipped_amalgam"
+    },
+    {
+      "item": "gilded_doom:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "gilded_doom:purgatory_amalgam",
+    "count": 1
+  }
+}

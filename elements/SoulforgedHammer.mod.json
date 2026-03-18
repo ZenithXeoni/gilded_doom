@@ -1,0 +1,37 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "soul_scrap",
+    "customModelName": "soulforged_hammer:default",
+    "name": "Soulforged Hammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:GildedDoom"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 11.0,
+    "attackSpeed": 1.0,
+    "enchantability": 35,
+    "damageVsEntity": 10.0,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:InfernalScrap"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "SoulforgedHit"
+    },
+    "onItemInUseTick": {
+      "name": "SoulforgedAura"
+    }
+  }
+}

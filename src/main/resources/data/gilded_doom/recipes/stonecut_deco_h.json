@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "gilded_doom:purgatory_stone"
+  },
+  "result": "gilded_doom:cracked_polished_purgatory_stone_stairs"
+}
