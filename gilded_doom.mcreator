@@ -340,8 +340,8 @@
       "registry_name": "infernal_core",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/gildeddoom/item/InfernalCoreItem.java",
-          "src/main/resources/assets/gilded_doom/models/item/infernal_core.json"
+          "src/main/resources/assets/gilded_doom/models/item/infernal_core.json",
+          "src/main/java/net/mcreator/gildeddoom/item/InfernalCoreItem.java"
         ]
       }
     },
@@ -639,8 +639,8 @@
       "registry_name": "gilded_core",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/gildeddoom/item/GildedCoreItem.java",
-          "src/main/resources/assets/gilded_doom/models/item/gilded_core.json"
+          "src/main/resources/assets/gilded_doom/models/item/gilded_core.json",
+          "src/main/java/net/mcreator/gildeddoom/item/GildedCoreItem.java"
         ]
       }
     },
@@ -938,10 +938,10 @@
       "registry_name": "purgatory_nylium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/blockstates/purgatory_nylium.json",
           "src/main/resources/assets/gilded_doom/models/block/purgatory_nylium.json",
           "src/main/resources/assets/gilded_doom/models/item/purgatory_nylium.json",
-          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryNyliumBlock.java"
+          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryNyliumBlock.java",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_nylium.json"
         ]
       }
     },
@@ -954,10 +954,10 @@
       "registry_name": "purgatory_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone.json",
           "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone.json",
-          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone.json"
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone.json"
         ]
       }
     },
@@ -970,10 +970,10 @@
       "registry_name": "polished_purgatory_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone.json",
           "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone.json",
-          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone.json"
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBlock.java"
         ]
       }
     },
@@ -986,10 +986,10 @@
       "registry_name": "polished_purgatory_stone_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_bricks.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_bricks.json",
           "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBricksBlock.java",
           "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_bricks.json",
-          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_bricks.json"
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_bricks.json"
         ]
       }
     },
@@ -1002,10 +1002,10 @@
       "registry_name": "cracked_polished_purgatory_bricks",
       "metadata": {
         "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_bricks.json",
           "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_bricks.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_bricks.json",
           "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryBricksBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_bricks.json"
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_bricks.json"
         ]
       }
     },
@@ -1018,10 +1018,10 @@
       "registry_name": "chiseled_polished_purgatory_bricks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/block/chiseled_polished_purgatory_bricks.json",
+          "src/main/resources/assets/gilded_doom/blockstates/chiseled_polished_purgatory_bricks.json",
           "src/main/java/net/mcreator/gildeddoom/block/ChiseledPolishedPurgatoryBricksBlock.java",
           "src/main/resources/assets/gilded_doom/models/item/chiseled_polished_purgatory_bricks.json",
-          "src/main/resources/assets/gilded_doom/blockstates/chiseled_polished_purgatory_bricks.json"
+          "src/main/resources/assets/gilded_doom/models/block/chiseled_polished_purgatory_bricks.json"
         ]
       }
     },
@@ -1034,11 +1034,11 @@
       "registry_name": "gilded_purgatory_stone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone.json",
-          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone.json",
           "src/main/java/net/mcreator/gildeddoom/block/GildedPurgatoryStoneBlock.java",
           "src/main/java/net/mcreator/gildeddoom/world/features/ores/GildedPurgatoryStoneFeature.java",
-          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone.json"
+          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone.json"
         ]
       }
     },
@@ -1052,10 +1052,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/gilded_doom/blockstates/iron_infused_purgatory_stone.json",
-          "src/main/java/net/mcreator/gildeddoom/world/features/ores/IronInfusedPurgatoryStoneFeature.java",
-          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneBlock.java",
           "src/main/resources/assets/gilded_doom/models/item/iron_infused_purgatory_stone.json",
-          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneBlock.java"
+          "src/main/java/net/mcreator/gildeddoom/world/features/ores/IronInfusedPurgatoryStoneFeature.java",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone.json"
         ]
       }
     },
@@ -1068,8 +1068,8 @@
       "registry_name": "purgatory_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/gilded_doom/dimension/purgatory_dimension.json",
-          "src/main/resources/data/gilded_doom/dimension_type/purgatory_dimension.json"
+          "src/main/resources/data/gilded_doom/dimension_type/purgatory_dimension.json",
+          "src/main/resources/data/gilded_doom/dimension/purgatory_dimension.json"
         ]
       }
     },
@@ -1163,8 +1163,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/gilded_doom/models/item/savage_duck_spawn_egg.json",
-          "src/main/java/net/mcreator/gildeddoom/entity/SavageDuckEntity.java",
-          "src/main/java/net/mcreator/gildeddoom/client/renderer/SavageDuckRenderer.java"
+          "src/main/java/net/mcreator/gildeddoom/client/renderer/SavageDuckRenderer.java",
+          "src/main/java/net/mcreator/gildeddoom/entity/SavageDuckEntity.java"
         ]
       }
     },
@@ -1262,8 +1262,8 @@
       "registry_name": "immunity_tome",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/immunity_tome.json",
-          "src/main/java/net/mcreator/gildeddoom/item/ImmunityTomeItem.java"
+          "src/main/java/net/mcreator/gildeddoom/item/ImmunityTomeItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/immunity_tome.json"
         ]
       }
     },
@@ -1870,8 +1870,8 @@
       "registry_name": "tracking_tome",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/gildeddoom/item/TrackingTomeItem.java",
-          "src/main/resources/assets/gilded_doom/models/item/tracking_tome.json"
+          "src/main/resources/assets/gilded_doom/models/item/tracking_tome.json",
+          "src/main/java/net/mcreator/gildeddoom/item/TrackingTomeItem.java"
         ]
       }
     },
@@ -2001,8 +2001,8 @@
       "registry_name": "free_me",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/gildeddoom/item/FreeMeItem.java",
-          "src/main/resources/assets/gilded_doom/models/item/free_me.json"
+          "src/main/resources/assets/gilded_doom/models/item/free_me.json",
+          "src/main/java/net/mcreator/gildeddoom/item/FreeMeItem.java"
         ]
       }
     },
@@ -2080,8 +2080,8 @@
       "registry_name": "cleansing_tome",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/cleansing_tome.json",
-          "src/main/java/net/mcreator/gildeddoom/item/CleansingTomeItem.java"
+          "src/main/java/net/mcreator/gildeddoom/item/CleansingTomeItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/cleansing_tome.json"
         ]
       }
     },
@@ -2130,10 +2130,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_wall.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_post.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall.json",
           "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_post.json",
           "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickWallBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_inventory.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_side_tall.json"
         ]
@@ -2148,13 +2148,13 @@
       "registry_name": "polished_purgatory_stone_wall",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneWallBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_inventory.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_post.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_side_tall.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_inventory.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_wall.json",
           "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_wall.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall.json",
-          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneWallBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_wall.json"
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall.json"
         ]
       }
     },
@@ -2169,11 +2169,11 @@
         "files": [
           "src/main/resources/assets/gilded_doom/blockstates/cracked_purgatory_stone_brick_wall.json",
           "src/main/java/net/mcreator/gildeddoom/block/CrackedPurgatoryStoneBrickWallBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_post.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_side_tall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_inventory.json",
           "src/main/resources/assets/gilded_doom/models/item/cracked_purgatory_stone_brick_wall.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_inventory.json"
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_side_tall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_post.json"
         ]
       }
     },
@@ -2186,12 +2186,12 @@
       "registry_name": "purgatory_stone_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone_slab.json",
           "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneSlabBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_slab.json",
           "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_top.json",
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_full.json"
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_full.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_top.json"
         ]
       }
     },
@@ -2205,11 +2205,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_slab.json",
-          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneSlabBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab_full.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab_top.json",
-          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_slab.json"
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab_full.json"
         ]
       }
     },
@@ -2222,12 +2222,12 @@
       "registry_name": "polished_purgatory_stone_brick_slab",
       "metadata": {
         "files": [
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_top.json",
           "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_slab.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_full.json",
           "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickSlabBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_top.json",
-          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_full.json"
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_slab.json"
         ]
       }
     },
@@ -2240,12 +2240,12 @@
       "registry_name": "cracked_polished_purgatory_brick_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_brick_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_full.json",
-          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_brick_slab.json",
-          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryBrickSlabBlock.java",
           "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_top.json"
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_top.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_full.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryBrickSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_brick_slab.json"
         ]
       }
     },
@@ -2258,12 +2258,12 @@
       "registry_name": "purgatory_stone_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_stairs.json",
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_outer.json",
           "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneStairsBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs.json",
           "src/main/resources/assets/gilded_doom/models/item/purgatory_stone_stairs.json",
-          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_inner.json"
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_inner.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_outer.json"
         ]
       }
     },
@@ -2276,11 +2276,11 @@
       "registry_name": "polished_purgatory_stone_stairs",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneStairsBlock.java",
           "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneStairsBlock.java",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs_inner.json",
           "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_stairs.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs_outer.json"
         ]
       }
@@ -2295,11 +2295,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickStairsBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs.json",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs_outer.json",
-          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_stairs.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs_inner.json",
-          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_stairs.json"
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs_outer.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs.json"
         ]
       }
     },
@@ -2312,12 +2312,12 @@
       "registry_name": "cracked_polished_purgatory_stone_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_stone_stairs.json",
-          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_stone_stairs.json",
-          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs_inner.json",
           "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs.json",
           "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs_outer.json",
-          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryStoneStairsBlock.java"
+          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_stone_stairs.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryStoneStairsBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs_inner.json"
         ]
       }
     },
@@ -2330,12 +2330,12 @@
       "registry_name": "gilded_purgatory_stone_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab_full.json",
-          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone_slab.json",
-          "src/main/java/net/mcreator/gildeddoom/block/GildedPurgatoryStoneSlabBlock.java",
           "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab_top.json",
-          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab.json"
+          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab_full.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab.json",
+          "src/main/java/net/mcreator/gildeddoom/block/GildedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone_slab.json"
         ]
       }
     },
@@ -2348,12 +2348,12 @@
       "registry_name": "iron_infused_purgatory_stone_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/blockstates/iron_infused_purgatory_stone_slab.json",
-          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab.json",
-          "src/main/resources/assets/gilded_doom/models/item/iron_infused_purgatory_stone_slab.json",
-          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab_full.json",
           "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab_top.json",
-          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab_full.json"
+          "src/main/resources/assets/gilded_doom/blockstates/iron_infused_purgatory_stone_slab.json",
+          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/iron_infused_purgatory_stone_slab.json"
         ]
       }
     },
@@ -2536,10 +2536,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_fence.json",
-          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_fence.json",
           "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryFenceBlock.java",
-          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence_post.json",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_fence.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence_post.json",
           "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence_inventory.json"
         ]
       }
@@ -2594,10 +2594,10 @@
       "registry_name": "bleeding_obsidan",
       "metadata": {
         "files": [
-          "src/main/resources/assets/gilded_doom/models/item/bleeding_obsidan.json",
           "src/main/resources/assets/gilded_doom/models/block/bleeding_obsidan.json",
-          "src/main/java/net/mcreator/gildeddoom/block/BleedingObsidanBlock.java",
-          "src/main/resources/assets/gilded_doom/blockstates/bleeding_obsidan.json"
+          "src/main/resources/assets/gilded_doom/models/item/bleeding_obsidan.json",
+          "src/main/resources/assets/gilded_doom/blockstates/bleeding_obsidan.json",
+          "src/main/java/net/mcreator/gildeddoom/block/BleedingObsidanBlock.java"
         ]
       }
     },
