@@ -1,4 +1,5 @@
 This is most likely never going to get updated but oh well!
+I fucked up the gradle so bad to where runClient doesnt work at all :?
 
 # Overview
 This mod overhauls bartering, adds powerful new hammers, unique tomes with special effects, and the Gilded Brute armor set, introducing strategic combat mechanics, custom enchantments, and high-risk, high-reward gameplay for a more dynamic Minecraft experience. Inspired by Charter, this mod also has a Banishment System, allowing you to ban your foes (with a cost.). For the best experience, I heavily recommend combining this mod with [Enchancement](https://modrinth.com/mod/enchancement) as this mod is balanced around Enchancement PVP
