@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "gilded_doom:purgatory_nylium",
+    "gilded_doom:purgatory_stone",
+    "gilded_doom:polished_purgatory_stone",
+    "gilded_doom:polished_purgatory_stone_bricks",
+    "gilded_doom:cracked_polished_purgatory_bricks",
+    "gilded_doom:chiseled_polished_purgatory_bricks",
+    "gilded_doom:polished_purgatory_stone_brick_wall",
+    "gilded_doom:polished_purgatory_stone_wall",
+    "gilded_doom:cracked_purgatory_stone_brick_wall",
+    "gilded_doom:purgatory_stone_slab",
+    "gilded_doom:polished_purgatory_stone_slab",
+    "gilded_doom:polished_purgatory_stone_brick_slab",
+    "gilded_doom:cracked_polished_purgatory_brick_slab",
+    "gilded_doom:purgatory_stone_stairs",
+    "gilded_doom:polished_purgatory_stone_stairs",
+    "gilded_doom:polished_purgatory_stone_brick_stairs",
+    "gilded_doom:cracked_polished_purgatory_stone_stairs",
+    "gilded_doom:polished_purgatory_fence"
+  ]
+}

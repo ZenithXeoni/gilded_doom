@@ -1,0 +1,58 @@
+{
+  "_fv": 43,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "Items.TOTEM_OF_UNDYING"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:GildedCore"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.1
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 64,
+            "price2": {
+              "value": "Blocks.ANCIENT_DEBRIS"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:AncientHammer"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

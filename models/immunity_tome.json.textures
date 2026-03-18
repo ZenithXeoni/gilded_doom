@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "9": "gilded_tome_gold"
+      },
+      "name": "default"
+    }
+  }
+}

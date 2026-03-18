@@ -1,0 +1,44 @@
+{
+  "_fv": 43,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Knockout",
+    "type": "BREAKABLE",
+    "rarity": "COMMON",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Fortitude"
+      },
+      {
+        "value": "CUSTOM:Torrent"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:AncientHammer"
+      },
+      {
+        "value": "CUSTOM:IronHammer"
+      },
+      {
+        "value": "CUSTOM:HellforgedHammer"
+      },
+      {
+        "value": "CUSTOM:SoulforgedHammer"
+      },
+      {
+        "value": "CUSTOM:GildedBanisher"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

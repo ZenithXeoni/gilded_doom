@@ -1,0 +1,32 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "gilded_doom:purgatory_amalgam"
+    },
+    "title": {
+      "translate": "advancements.purgatory_bound.title"
+    },
+    "description": {
+      "translate": "advancements.purgatory_bound.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "purgatory_bound": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "gilded_doom:purgatory_dimension"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gilded_doom:amalgam_craft"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Do Real Bans",
+    "description": "Decides weather Pending Death uses Real Bans + Purgatory Sending, Without this, purgatory will be inaccessable by normal means.",
+    "category": "PLAYER",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

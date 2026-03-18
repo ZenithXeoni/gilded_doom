@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gilded_doom:blocks/bleeding_obsidian",
+    "particle": "gilded_doom:blocks/bleeding_obsidian"
+  }
+}

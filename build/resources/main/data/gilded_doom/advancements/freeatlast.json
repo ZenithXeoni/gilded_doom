@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "gilded_doom:purgatory_amalgam"
+    },
+    "title": {
+      "translate": "advancements.freeatlast.title"
+    },
+    "description": {
+      "translate": "advancements.freeatlast.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "freeatlast": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "gilded_doom:purgatory_bound"
+}

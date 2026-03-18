@@ -1,0 +1,37 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ancient_hammer_2d",
+    "customModelName": "ancient_hammer:default",
+    "name": "Ancient Hammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:GildedDoom"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 10.0,
+    "attackSpeed": 1.0,
+    "enchantability": 22,
+    "damageVsEntity": 9.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AncientHammerRightclicked"
+    },
+    "onEntityHitWith": {
+      "name": "AncientHammerLivingEntityIsHitWithTool"
+    }
+  }
+}

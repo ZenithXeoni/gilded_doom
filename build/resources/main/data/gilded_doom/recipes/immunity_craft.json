@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gilded_doom:brutal_tome"
+  },
+  "addition": {
+    "item": "minecraft:enchanted_golden_apple"
+  },
+  "result": {
+    "item": "gilded_doom:immunity_tome"
+  }
+}

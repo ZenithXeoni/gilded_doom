@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "gilded_doom:infernal_scrap"
+    },
+    "1": {
+      "item": "gilded_doom:infernal_scrap"
+    },
+    "2": {
+      "item": "gilded_doom:infernal_scrap"
+    },
+    "3": {
+      "item": "gilded_doom:infernal_scrap"
+    }
+  },
+  "result": {
+    "item": "gilded_doom:infernal_core",
+    "count": 1
+  }
+}

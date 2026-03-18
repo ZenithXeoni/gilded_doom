@@ -1,0 +1,81 @@
+{
+  "_fv": 43,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "gilded_brute_helmet",
+    "enableBody": true,
+    "textureBody": "gilded_brute_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "gilded_brute_leggings",
+    "enableBoots": true,
+    "textureBoots": "gilded_brute_boots",
+    "onHelmetTick": {
+      "name": "GildedBruteHelmetTickEvent"
+    },
+    "onLeggingsTick": {
+      "name": "GildedBruteLeggingsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:GildedDoom"
+    },
+    "armorTextureFile": "gilded_brute_armor_",
+    "helmetName": "Gilded Brute Helmet",
+    "bodyName": "Gilded Brute Chestplate",
+    "leggingsName": "Gilded Brute Leggings",
+    "bootsName": "Gilded Brute Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "Built-in Thorns III~"
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 40,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 15,
+    "toughness": 3.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:GildedIngot"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ]
+  }
+}

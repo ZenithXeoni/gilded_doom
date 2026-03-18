@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "book_of_gilded_banishment"
+      },
+      "name": "default"
+    }
+  }
+}

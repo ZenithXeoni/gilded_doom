@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "gilded_doom:blocks/polished_purgatory_stone",
+    "particle": "gilded_doom:blocks/polished_purgatory_stone"
+  }
+}

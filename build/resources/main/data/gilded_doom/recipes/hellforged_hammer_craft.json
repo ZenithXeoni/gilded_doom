@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gilded_doom:ancient_hammer"
+  },
+  "addition": {
+    "item": "gilded_doom:infernal_core"
+  },
+  "result": {
+    "item": "gilded_doom:hellforged_hammer"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "gilded_doom:ancient_hammer"
+  },
+  "addition": {
+    "item": "gilded_doom:gilded_core"
+  },
+  "result": {
+    "item": "gilded_doom:gilded_banisher"
+  }
+}

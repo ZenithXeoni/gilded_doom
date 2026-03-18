@@ -1,0 +1,39 @@
+{
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2025-06-09 10:21:46 -0600"
+    },
+    "done": true
+  },
+  "gilded_doom:purgatory_bound": {
+    "criteria": {
+      "purgatory_bound": "2025-06-09 10:23:19 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2025-06-09 10:21:46 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2025-06-09 10:21:46 -0600"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:soul_sand_valley": "2025-06-09 10:23:25 -0600"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2025-06-09 10:21:47 -0600"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

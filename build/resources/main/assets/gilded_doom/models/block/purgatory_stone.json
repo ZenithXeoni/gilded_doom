@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gilded_doom:blocks/purgatory_stone_top",
+    "up": "gilded_doom:blocks/purgatory_stone_top",
+    "north": "gilded_doom:blocks/purgatory_stone",
+    "east": "gilded_doom:blocks/purgatory_stone",
+    "south": "gilded_doom:blocks/purgatory_stone",
+    "west": "gilded_doom:blocks/purgatory_stone",
+    "particle": "gilded_doom:blocks/purgatory_stone_top"
+  },
+  "render_type": "solid"
+}

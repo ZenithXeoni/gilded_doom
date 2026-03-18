@@ -1,0 +1,34 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [
+      {
+        "value": "CUSTOM:PolishedPurgatoryStoneBrickWall"
+      },
+      {
+        "value": "CUSTOM:PolishedPurgatoryStoneWall"
+      },
+      {
+        "value": "CUSTOM:CrackedPurgatoryStoneBrickWall"
+      }
+    ],
+    "blocks": [
+      {
+        "value": "CUSTOM:PolishedPurgatoryStoneBrickWall"
+      },
+      {
+        "value": "CUSTOM:PolishedPurgatoryStoneWall"
+      },
+      {
+        "value": "CUSTOM:CrackedPurgatoryStoneBrickWall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

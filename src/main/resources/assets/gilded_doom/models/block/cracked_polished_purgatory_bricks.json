@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gilded_doom:blocks/cracked_polished_purgatory_stone_bricks",
+    "particle": "gilded_doom:blocks/cracked_polished_purgatory_stone_bricks"
+  }
+}

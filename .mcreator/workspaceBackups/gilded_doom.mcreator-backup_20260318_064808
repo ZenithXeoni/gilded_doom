@@ -1,0 +1,3234 @@
+{
+  "mod_elements": [
+    {
+      "name": "AncientHammer",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/ancient_hammer.json",
+          "src/main/java/net/mcreator/gildeddoom/item/AncientHammerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientHammerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_hammer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/AncientHammerLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheEchoFallExpirenceOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_echo_fall_expirence_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/TheEchoFallExpirenceOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheEchoFallExpirence",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_echo_fall_experience",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/TheEchoFallExpirenceMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Tomehitting",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomehitting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/TomehittingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronHammer",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/iron_hammer.json",
+          "src/main/java/net/mcreator/gildeddoom/item/IronHammerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BurtalTomeCraft",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burtal_tome_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/burtal_tome_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "WitheringTomeCraft",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withering_tome_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/withering_tome_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "IronHammerCraft",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_hammer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/iron_hammer_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "Torrent",
+      "type": "enchantment",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torrent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/enchantment/TorrentEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "HammerEnchants",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_enchants",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/HammerEnchantsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fortitude",
+      "type": "enchantment",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortitude",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/enchantment/FortitudeEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "Knockout",
+      "type": "enchantment",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/enchantment/KnockoutEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "GildedContractRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_contract_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedContractRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedContract",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_contract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/GildedContractItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_contract.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedContractCraft",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_contract_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_contract_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "InfernalScrap",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infernal_scrap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/infernal_scrap.json",
+          "src/main/java/net/mcreator/gildeddoom/item/InfernalScrapItem.java"
+        ]
+      }
+    },
+    {
+      "name": "InfernalCore",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infernal_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/infernal_core.json",
+          "src/main/java/net/mcreator/gildeddoom/item/InfernalCoreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "InfernalCoreCraft",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infernal_core_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/infernal_core_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "HellforgedHammerToolInHandTick",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellforged_hammer_tool_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/HellforgedHammerToolInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HellforgedHammer",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellforged_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/HellforgedHammerItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/hellforged_hammer.json"
+        ]
+      }
+    },
+    {
+      "name": "HellforgedHammerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellforged_hammer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/HellforgedHammerLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HelltoSoulForge",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellto_soul_forge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/hell_to_soul_forge.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulforgedHammer",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforged_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/soulforged_hammer.json",
+          "src/main/java/net/mcreator/gildeddoom/item/SoulforgedHammerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulforgedAura",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforged_aura",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/SoulforgedAuraProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulforgedHit",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforged_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/SoulforgedHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HellforgedHammerCraft",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hellforged_hammer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/hellforged_hammer_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "AncientHammerRightclicked",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_hammer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/AncientHammerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeathsMark",
+      "type": "potioneffect",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deaths_mark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/DeathsMarkMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PendingDeath",
+      "type": "potioneffect",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pending_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/PendingDeathMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "UltimatePower",
+      "type": "potioneffect",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_power",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/UltimatePowerMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "GildedCore",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/gilded_core.json",
+          "src/main/java/net/mcreator/gildeddoom/item/GildedCoreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GildedTrade",
+      "type": "villagertrade",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GildedBanisher",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_banisher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/GildedBanisherItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_banisher.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBanisherLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_banisher_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedBanisherLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PendingDeathEffectExpires",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pending_death_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PendingDeathEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedStasis",
+      "type": "potioneffect",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_stasis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/GildedStasisMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "GildedStasisOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_stasis_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedStasisOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PendingfuckingDies",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pendingfucking_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PendingfuckingDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UltimatePowerOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_power_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/UltimatePowerOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedHammerCraft",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_hammer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_hammer_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedDoom",
+      "type": "tab",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_doom",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BrutalTome",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brutal_tome",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/brutal_tome.json",
+          "src/main/java/net/mcreator/gildeddoom/item/BrutalTomeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WitheringTome",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withering_tome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/WitheringTomeItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/withering_tome.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryAmalgamRightclicked",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_amalgam_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatoryAmalgamRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryAmalgam",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_amalgam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_amalgam.json",
+          "src/main/java/net/mcreator/gildeddoom/item/PurgatoryAmalgamItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Purgatory",
+      "type": "tab",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PurgatoryNylium",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_nylium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_nylium.json",
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_nylium.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryNyliumBlock.java",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_nylium.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryStone",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStone",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneBricks",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_bricks.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBricksBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_bricks.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedPolishedPurgatoryBricks",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_polished_purgatory_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_bricks.json",
+          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_bricks.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryBricksBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledPolishedPurgatoryBricks",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_polished_purgatory_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/chiseled_polished_purgatory_bricks.json",
+          "src/main/java/net/mcreator/gildeddoom/block/ChiseledPolishedPurgatoryBricksBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/chiseled_polished_purgatory_bricks.json",
+          "src/main/resources/assets/gilded_doom/models/block/chiseled_polished_purgatory_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedPurgatoryStone",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/GildedPurgatoryStoneBlock.java",
+          "src/main/java/net/mcreator/gildeddoom/world/features/ores/GildedPurgatoryStoneFeature.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "IronInfusedPurgatoryStone",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_infused_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/iron_infused_purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/iron_infused_purgatory_stone.json",
+          "src/main/java/net/mcreator/gildeddoom/world/features/ores/IronInfusedPurgatoryStoneFeature.java",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryDimension",
+      "type": "dimension",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/dimension_type/purgatory_dimension.json",
+          "src/main/resources/data/gilded_doom/dimension/purgatory_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftPurgatoryNylium",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_purgatory_nylium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/craft_purgatory_nylium.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftPolishedPurgatoryStone",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_polished_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/craft_polished_purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftPolishedPurgatoryBricks",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_polished_purgatory_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/craft_polished_purgatory_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftCrackedPolishedPurgatoryStone",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cracked_polished_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/craft_cracked_polished_purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftChiseledPolishedPurgatoryStone",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_chiseled_polished_purgatory_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/craft_chiseled_polished_purgatory_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "Duck",
+      "type": "livingentity",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/client/renderer/DuckRenderer.java",
+          "src/main/java/net/mcreator/gildeddoom/entity/DuckEntity.java",
+          "src/main/resources/assets/gilded_doom/models/item/duck_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "SavageDuck",
+      "type": "livingentity",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savage_duck",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/savage_duck_spawn_egg.json",
+          "src/main/java/net/mcreator/gildeddoom/client/renderer/SavageDuckRenderer.java",
+          "src/main/java/net/mcreator/gildeddoom/entity/SavageDuckEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DuckEntityDies",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duck_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/DuckEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SavageDuckEntityIsHurt",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savage_duck_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/SavageDuckEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Duckspawninpurgatory",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatoryamalgamsoulrelatedshit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/DuckspawninpurgatoryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmunityTome",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immunity_tome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/ImmunityTomeItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/immunity_tome.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedImmunity",
+      "type": "potioneffect",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_immunity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/GildedImmunityMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "GildedImmunityOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_immunity_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedImmunityOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedPassive",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_passive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedPassiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmunityTomeRightclicked",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immunity_tome_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/ImmunityTomeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CraftingIronPurgatoru",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_iron_purgatoru",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/crafting_iron_purgatoru.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftingGildedPurgatory",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_gilded_purgatory",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/crafting_gilded_purgatory.json"
+        ]
+      }
+    },
+    {
+      "name": "AmalgamCraft",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amalgam_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/amalgam_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryAmalgamRightclickedReal",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_amalgam_rightclicked_real",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatoryAmalgamRightclickedRealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thereisnoescape",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thereisnoescape",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/ThereisnoescapeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Youtried",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "youtried",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/YoutriedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryBound",
+      "type": "achievement",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_bound",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/advancements/purgatory_bound.json"
+        ]
+      }
+    },
+    {
+      "name": "Freeatlast",
+      "type": "achievement",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freeatlast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/advancements/freeatlast.json"
+        ]
+      }
+    },
+    {
+      "name": "ImmunityCraft",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immunity_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/immunity_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryComplete",
+      "type": "achievement",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_complete",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/advancements/purgatory_complete.json"
+        ]
+      }
+    },
+    {
+      "name": "NeptuniteOnly",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warping_amalgam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/NeptuniteOnlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InPurgatory",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "in_purgatory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/InPurgatoryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thorns",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thorns",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/ThornsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedIngot",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/GildedIngotItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBrute",
+      "type": "armor",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/gilded_brute_leggings.json",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_brute_chestplate.json",
+          "src/main/java/net/mcreator/gildeddoom/item/GildedBruteItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_brute_boots.json",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_brute_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "CoverMeInRiches",
+      "type": "achievement",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cover_me_in_riches",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/advancements/cover_me_in_riches.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryFuckingDies",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_fucking_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatoryFuckingDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PendingPurgatoryTimeIsUp",
+      "type": "procedure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pending_purgatory_time_is_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PendingPurgatoryTimeIsUpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_helmet_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedBruteHelmetTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteHelmCraft",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_helm_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_brute_helm_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteChestCraft",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_chest_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_brute_chest_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteLeggsCraft",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_leggs_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_brute_leggs_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteBootsCraft",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_boots_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_brute_boots_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "NopeNotHappening",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nope_not_happening",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/NopeNotHappeningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrackingTomeRightclicked",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tracking_tome_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/TrackingTomeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrackingTome",
+      "type": "item",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tracking_tome",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/tracking_tome.json",
+          "src/main/java/net/mcreator/gildeddoom/item/TrackingTomeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Notrackingwhendead",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "notrackingwhendead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/NotrackingwhendeadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarpedAmalgam",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_amalgam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/WarpedAmalgamItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/warped_amalgam.json"
+        ]
+      }
+    },
+    {
+      "name": "WarpedAmalgamCraft",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_amalgam_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/warped_amalgam_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulforgedToHellforged",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforged_to_hellforged",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/soulforged_to_hellforged.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedBruteLeggingsTickEvent",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_brute_leggings_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/GildedBruteLeggingsTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FreeMeRightclicked",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "free_me_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/FreeMeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FreeMe",
+      "type": "item",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "free_me",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/free_me.json",
+          "src/main/java/net/mcreator/gildeddoom/item/FreeMeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CleansingTomeRightclicked",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleansing_tome_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/CleansingTomeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CleansingTomeCraft",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleansing_tome_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/cleansing_tome_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "TrackingTomeCraft",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tracking_tome_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/tracking_tome_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "CleansingTome",
+      "type": "tool",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cleansing_tome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/CleansingTomeItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/cleansing_tome.json"
+        ]
+      }
+    },
+    {
+      "name": "AntiSuicidalEscape",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_suicidal_escape",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/AntiSuicidalEscapeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneBrickWall",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_post.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickWallBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_inventory.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_wall_side_tall.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneWall",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_wall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneWallBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_inventory.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_post.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall_side_tall.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_wall.json",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedPurgatoryStoneBrickWall",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_purgatory_stone_brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_purgatory_stone_brick_wall.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPurgatoryStoneBrickWallBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_inventory.json",
+          "src/main/resources/assets/gilded_doom/models/item/cracked_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_side_tall.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_purgatory_stone_brick_wall_post.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryStoneSlab",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_full.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_slab_top.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneSlab",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab_top.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_slab_full.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneBrickSlab",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_brick_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_top.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_slab_full.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedPolishedPurgatoryBrickSlab",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_polished_purgatory_brick_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_top.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_brick_slab_full.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryBrickSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_brick_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_brick_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryStoneStairs",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_stone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/PurgatoryStoneStairsBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/blockstates/purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_inner.json",
+          "src/main/resources/assets/gilded_doom/models/block/purgatory_stone_stairs_outer.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneStairs",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneStairsBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs_inner.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_stairs_outer.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryStoneBrickStairs",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_stone_brick_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryStoneBrickStairsBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs_inner.json",
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_stone_brick_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_stone_brick_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs_outer.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_stone_brick_stairs.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedPolishedPurgatoryStoneStairs",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_polished_purgatory_stone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs_outer.json",
+          "src/main/resources/assets/gilded_doom/models/item/cracked_polished_purgatory_stone_stairs.json",
+          "src/main/resources/assets/gilded_doom/blockstates/cracked_polished_purgatory_stone_stairs.json",
+          "src/main/java/net/mcreator/gildeddoom/block/CrackedPolishedPurgatoryStoneStairsBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/cracked_polished_purgatory_stone_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "GildedPurgatoryStoneSlab",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_purgatory_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab_top.json",
+          "src/main/resources/assets/gilded_doom/blockstates/gilded_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab_full.json",
+          "src/main/resources/assets/gilded_doom/models/block/gilded_purgatory_stone_slab.json",
+          "src/main/java/net/mcreator/gildeddoom/block/GildedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/gilded_purgatory_stone_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "IronInfusedPurgatoryStoneSlab",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_infused_purgatory_stone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab_full.json",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab_top.json",
+          "src/main/resources/assets/gilded_doom/blockstates/iron_infused_purgatory_stone_slab.json",
+          "src/main/java/net/mcreator/gildeddoom/block/IronInfusedPurgatoryStoneSlabBlock.java",
+          "src/main/resources/assets/gilded_doom/models/block/iron_infused_purgatory_stone_slab.json",
+          "src/main/resources/assets/gilded_doom/models/item/iron_infused_purgatory_stone_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoA",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_a.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoB",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_b.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoC",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_c.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoD",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_d",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_d.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoE",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_e",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_e.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoF",
+      "type": "recipe",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_f.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoG",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_g",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_g.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoH",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_h",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_h.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoI",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_i",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_i.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoJ",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_j",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_j.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoK",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_k",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_k.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoL",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_l",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_l.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoM",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_m",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_m.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedPurgatoryFence",
+      "type": "block",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_purgatory_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/blockstates/polished_purgatory_fence.json",
+          "src/main/java/net/mcreator/gildeddoom/block/PolishedPurgatoryFenceBlock.java",
+          "src/main/resources/assets/gilded_doom/models/item/polished_purgatory_fence.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence_post.json",
+          "src/main/resources/assets/gilded_doom/models/block/polished_purgatory_fence_inventory.json"
+        ]
+      }
+    },
+    {
+      "name": "StonecutDecoO",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecut_deco_o",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/stonecut_deco_o.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodGrapes",
+      "type": "item",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_grapes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/BloodGrapesItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/blood_grapes.json"
+        ]
+      }
+    },
+    {
+      "name": "ChippedAmalgam",
+      "type": "item",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chipped_amalgam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/ChippedAmalgamItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/chipped_amalgam.json"
+        ]
+      }
+    },
+    {
+      "name": "BleedingObsidan",
+      "type": "block",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_obsidan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/block/bleeding_obsidan.json",
+          "src/main/resources/assets/gilded_doom/models/item/bleeding_obsidan.json",
+          "src/main/resources/assets/gilded_doom/blockstates/bleeding_obsidan.json",
+          "src/main/java/net/mcreator/gildeddoom/block/BleedingObsidanBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BleedingObsidianGen",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_obsidian_gen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/BleedingObsidianGenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChipedAmalgmcraft",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiped_amalgmcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/chiped_amalgmcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "PurgatoryAlternative",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatory_alternative",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/purgatory_alternative.json"
+        ]
+      }
+    },
+    {
+      "name": "Walls",
+      "type": "tag",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "walls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/walls.json"
+        ]
+      }
+    },
+    {
+      "name": "Fences",
+      "type": "tag",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fences",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/fences.json"
+        ]
+      }
+    },
+    {
+      "name": "DuckRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "duck_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/DuckRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrutalTomeRightclicked",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brutal_tome_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/BrutalTomeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GildedIngotCraft",
+      "type": "recipe",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_ingot_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/gilded_ingot_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "BookUnlocked",
+      "type": "gamerule",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_unlocked",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "Allowgildedbanishment",
+      "type": "gamerule",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allowgildedbanishment",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "GildedEmpowerment",
+      "type": "potioneffect",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gilded_empowerment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/potion/GildedEmpowermentMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "BookofGildedBanishmentItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bookof_gilded_banishment_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/BookofGildedBanishmentItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BloodGrapesPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_grapes_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/BloodGrapesPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ObjectivePunishment",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "objective_punishment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/ObjectivePunishmentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Purgatorynuhfuckinguh",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purgatorynuhfuckinguh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatorynuhfuckinguhProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EngraveSoulOnDeath",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engrave_soul_on_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/EngraveSoulOnDeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DemenaniteOre",
+      "type": "block",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demenanite_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/world/features/ores/DemenaniteOreFeature.java",
+          "src/main/resources/assets/gilded_doom/blockstates/demenanite_ore.json",
+          "src/main/resources/assets/gilded_doom/models/item/demenanite_ore.json",
+          "src/main/resources/assets/gilded_doom/models/block/demenanite_ore.json",
+          "src/main/java/net/mcreator/gildeddoom/block/DemenaniteOreBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DemonicDust",
+      "type": "item",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demonic_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gilded_doom/models/item/demonic_dust.json",
+          "src/main/java/net/mcreator/gildeddoom/item/DemonicDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DarkstoneToCoal",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "darkstone_to_coal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/darkstone_to_coal.json"
+        ]
+      }
+    },
+    {
+      "name": "BookOfGildedBanishment",
+      "type": "tool",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "book_of_gilded_banishment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/BookOfGildedBanishmentItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/book_of_gilded_banishment.json"
+        ]
+      }
+    },
+    {
+      "name": "DoRealBans",
+      "type": "gamerule",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "do_real_bans",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "obx",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "obz",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "oby",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "bookfound",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "got_any_grapes",
+      "files": [
+        "ray_saying_got_any_grapes"
+      ],
+      "category": "master",
+      "subtitle": "Got any Grapes?"
+    },
+    {
+      "name": "got_any_glue",
+      "files": [
+        "ray_saying_got_any_glue"
+      ],
+      "category": "master",
+      "subtitle": "Got any Glue?"
+    },
+    {
+      "name": "ultimate_power_charge_up",
+      "files": [
+        "ultimate_power_charge_up"
+      ],
+      "category": "neutral",
+      "subtitle": "ultimate power charges up"
+    },
+    {
+      "name": "ancient_hammer_slam",
+      "files": [
+        "mace_smash_air3",
+        "mace_smash_air2",
+        "mace_smash_air1"
+      ],
+      "category": "player",
+      "subtitle": "Ancient Hammer Slam"
+    },
+    {
+      "name": "enchantment_torrent",
+      "files": [
+        "breeze_wind_burst3",
+        "breeze_wind_burst1",
+        "breeze_wind_burst2"
+      ],
+      "category": "player",
+      "subtitle": "Torrent Launch"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.got_any_glue": "Got any Glue?",
+      "advancements.purgatory_complete.descr": "Escape from purgatory 2 times.",
+      "item.gilded_doom.hellforged_hammer": "Hellforged Hammer",
+      "gamerule.allowgildedbanishment": "Allow Gilded Banishment",
+      "item.gilded_doom.withering_tome": "Withering Tome",
+      "block.gilded_doom.cracked_polished_purgatory_brick_slab": "Cracked Polished Purgatory Stone Brick Slab",
+      "effect.gilded_doom.ultimate_power": "Ultimate Power",
+      "entity.gilded_doom.savage_duck": "Savage Duck",
+      "block.gilded_doom.purgatory_stone_slab": "Purgatory Stone Slab",
+      "block.gilded_doom.cracked_polished_purgatory_bricks": "Cracked Polished Purgatory Stone Bricks",
+      "item.gilded_doom.cleansing_tome": "Cleansing Tome",
+      "item.gilded_doom.gilded_brute_helmet": "Gilded Brute Helmet",
+      "effect.gilded_doom.gilded_empowerment": "Gilded Empowerment",
+      "block.gilded_doom.purgatory_stone_stairs": "Purgatory Stone Stairs",
+      "subtitles.ancient.hammer.smash": "Ancient Hammer Slam",
+      "item.gilded_doom.tracking_tome": "Tracking Tome",
+      "item.gilded_doom.brutal_tome": "Brutal Tome",
+      "block.gilded_doom.polished_purgatory_stone_bricks": "Polished Purgatory Stone Bricks",
+      "block.gilded_doom.polished_purgatory_stone_stairs": "Polished Purgatory Stone",
+      "effect.gilded_doom.the_echo_fall_experience": "The Echofall Experience",
+      "enchantment.gilded_doom.knockout.desc": "Has a chance to inflict Blindness when attacking, with the duration scaling according to how high the target\u0027s health is.",
+      "block.gilded_doom.iron_infused_purgatory_stone": "Iron Infused Purgatory Stone",
+      "advancements.cover_me_in_riches.descr": "Obtian a full set of Gilded Brute Armor.",
+      "entity.gilded_doom.duck": "Duck",
+      "block.gilded_doom.cracked_purgatory_stone_brick_wall": "Cracked Polished Purgatory Stone Brick Wall",
+      "item.gilded_doom.chipped_amalgam": "Chipped Amalgam",
+      "advancements.freeatlast.descr": "Escape the hellish prison using the Purgatory Amalgam, the item that sent you there in the first place.",
+      "block.gilded_doom.chiseled_polished_purgatory_bricks": "Chiseled Polished Purgatory Stone",
+      "block.gilded_doom.polished_purgatory_stone_brick_wall": "Polished Purgatory Stone Brick Wall",
+      "gamerule.book_unlocked.description": "Used as a conditional in Gilded Doom, global variables are funky :/",
+      "item.gilded_doom.infernal_core": "Infernal Core",
+      "gamerule.book_unlocked": "Book Unlocked",
+      "block.gilded_doom.polished_purgatory_stone_slab": "Polished Purgatory Stone Slab",
+      "item.gilded_doom.gilded_ingot": "Gilded Ingot",
+      "gamerule.do_real_bans.description": "Decides weather Pending Death uses Real Bans + Purgatory Sending, Without this, purgatory will be inaccessable by normal means.",
+      "subtitles.enchantment_torrent": "Torrent Launch",
+      "effect.gilded_doom.pending_death": "Pending Death",
+      "item.gilded_doom.gilded_core": "Gilded Core",
+      "item.gilded_doom.gilded_brute_boots": "Gilded Brute Boots",
+      "item.gilded_doom.iron_hammer": "Iron Hammer",
+      "effect.gilded_doom.gilded_immunity": "Gilded Immunity",
+      "item.gilded_doom.gilded_brute_leggings": "Gilded Brute Leggings",
+      "block.gilded_doom.demenanite_ore": "Redstone Infused Purgatory Stone",
+      "effect.gilded_doom.deaths_mark": "Death\u0027s Mark",
+      "item.gilded_doom.free_me": "Free Me",
+      "subtitles.ultimate_power_charge_up": "ultimate power charges up",
+      "item.gilded_doom.savage_duck_spawn_egg": "Savage Duck Spawn Egg",
+      "enchantment.gilded_doom.fortitude.desc": "When attacking at low health, you gain resistance and slowness.",
+      "block.gilded_doom.polished_purgatory_stone_brick_stairs": "Polished Purgatory Stone Brick Stairs",
+      "item.gilded_doom.warped_amalgam": "Warped Amalgam",
+      "advancements.freeatlast.title": "Free, at last",
+      "block.gilded_doom.purgatory_nylium": "Purgatory Nylium",
+      "enchantment.gilded_doom.torrent.desc": "Launches entities up into the air when attacking",
+      "gamerule.allowgildedbanishment.description": "Allows for the book of gilded banishment to be unlocked and allows ducks to be spawned from the chipped amalgam.",
+      "enchantment.gilded_doom.purgatory_removal.desc": "Removes Pending Purgatory, but beware; Thou shall still haunt.",
+      "block.gilded_doom.bleeding_obsidan": "Bleeding Obsidan",
+      "item.gilded_doom.soulforged_hammer": "Soulforged Hammer",
+      "item.gilded_doom.book_of_gilded_banishment": "§6Book of Gilded Banishment",
+      "block.gilded_doom.polished_purgatory_stone": "Polished Purgatory Stone",
+      "block.gilded_doom.gilded_purgatory_stone_slab": "Gilded Purgatory Stone Slab",
+      "itemGroup.gilded_doom.gilded_doom": "Gilded Doom",
+      "enchantment.gilded_doom.banishment_removal.desc": "Removes Pending Death II, but beware; Thou shall still haunt.",
+      "advancements.purgatory_bound.title": "The... End?",
+      "block.gilded_doom.polished_purgatory_stone_wall": "Polished Purgatory Stone Wall",
+      "block.gilded_doom.iron_infused_purgatory_stone_slab": "Iron Infused Purgatory Stone Slab",
+      "item.gilded_doom.immunity_tome": "Immunity Tome",
+      "block.gilded_doom.polished_purgatory_stone_brick_slab": "Polished Purgatory Stone Brick Slab",
+      "item.gilded_doom.ancient_hammer": "Ancient Hammer",
+      "block.gilded_doom.polished_purgatory_fence": "Polished Purgatory Stone Brick Wall",
+      "effect.gilded_doom.the_echo_fall_experience.desc": "has a random chance to halt your momentum.",
+      "subtitles.ancient_hammer_slam": "Ancient Hammer Slam",
+      "gamerule.do_real_bans": "Do Real Bans",
+      "enchantment.gilded_doom.torrent": "Torrent",
+      "itemGroup.gilded_doom.purgatory_tab": "Purgatory",
+      "item.gilded_doom.gilded_contract": "Gilded Contract",
+      "item.gilded_doom.demonic_dust": "Purgatory Dust",
+      "item.gilded_doom.duck_spawn_egg": "Duck Spawn Egg",
+      "item.gilded_doom.infernal_scrap": "Infernal Scrap",
+      "advancements.purgatory_bound.descr": "Enter the hellish backrooms; Purgatory. ",
+      "item.gilded_doom.gilded_banisher": "Gilded Banisher",
+      "enchantment.gilded_doom.knockout": "Knockout",
+      "block.gilded_doom.gilded_purgatory_stone": "Gilded Purgatory Stone",
+      "subtitles.got_any_grapes": "Got any Grapes?",
+      "item.gilded_doom.gilded_brute_chestplate": "Gilded Brute Chestplate",
+      "subtitles.enchantment.torrent": "Torrent Launch",
+      "advancements.purgatory_complete.title": "This Prison, to hold me?!",
+      "item.gilded_doom.purgatory_amalgam": "Purgatory Amalgam",
+      "item.gilded_doom.blood_grapes": "Blood Grapes",
+      "block.gilded_doom.cracked_polished_purgatory_stone_stairs": "Cracked Polished Purgatory Stone Bricks",
+      "effect.gilded_doom.gilded_stasis": "Gilded Stasis",
+      "block.gilded_doom.purgatory_stone": "Purgatory Stone",
+      "enchantment.gilded_doom.fortitude": "Fortitude",
+      "advancements.cover_me_in_riches.title": "Cover Me In Riches"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "gilded_doom",
+    "modName": "Gilded Doom",
+    "version": "2.2.3",
+    "description": "Weaponry mod themed around piglins. adds better bartering, new weapons, and more!",
+    "author": "Xeoni",
+    "websiteURL": "https://modrinth.com/user/Xeoni",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "1b7e14aff9a33b521e18db7e2e099b4bb4c24bd7_96",
+    "requiredMods": [
+      "player_souls",
+      "persistent_health_attributes"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.2",
+    "credits": "Xeoni",
+    "modElementsPackage": "net.mcreator.gildeddoom",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

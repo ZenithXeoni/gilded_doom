@@ -1,0 +1,37 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ancient_hammer_2d",
+    "customModelName": "gilded_banisher:default",
+    "name": "Gilded Banisher",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:GildedDoom"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 12.0,
+    "attackSpeed": 1.0,
+    "enchantability": 45,
+    "damageVsEntity": 10.0,
+    "usageCount": 2500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "CUSTOM:GildedIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GildedBanisherLivingEntityIsHitWithTool"
+    }
+  }
+}
