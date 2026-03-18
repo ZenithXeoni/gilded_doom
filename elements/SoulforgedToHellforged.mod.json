@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SoulforgedHammer"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.LAVA_BUCKET"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:HellforgedHammer"
+    },
+    "name": "soulforged_to_hellforged",
+    "namespace": "mod"
+  }
+}

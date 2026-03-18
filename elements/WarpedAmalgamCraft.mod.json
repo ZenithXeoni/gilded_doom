@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WARPED_WART_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WARPED_WART_BLOCK"
+      },
+      {
+        "value": "CUSTOM:PurgatoryAmalgam"
+      },
+      {
+        "value": "Blocks.WARPED_WART_BLOCK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WARPED_WART_BLOCK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WarpedAmalgam"
+    },
+    "name": "warped_amalgam_craft",
+    "namespace": "mod"
+  }
+}
