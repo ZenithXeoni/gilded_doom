@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "7": "concept3_1"
+      },
+      "name": "default"
+    }
+  }
+}

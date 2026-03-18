@@ -1,0 +1,38 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "shittycontract",
+    "customModelName": "book:default",
+    "name": "Book of Documentation",
+    "specialInfo": [
+      "Hold this with an Item in your offhand",
+      "If it’s related to Gilded Banishment",
+      "It will show you how it’s used."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:GildedDoom"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 1,
+    "efficiency": 6.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.BOOK"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "GildedContractRightclickedOnBlock"
+    }
+  }
+}
