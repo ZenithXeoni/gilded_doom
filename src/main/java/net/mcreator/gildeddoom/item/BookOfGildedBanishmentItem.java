@@ -1,5 +1,6 @@
 package net.mcreator.gildeddoom.item;
 
+import net.mcreator.gildeddoom.init.GildedDoomModMobEffects;
 import net.mcreator.gildeddoom.procedures.BookofGildedBanishmentItemInInventoryTickProcedure;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -63,8 +64,8 @@ public class BookOfGildedBanishmentItem extends PickaxeItem {
             // 2. Check if the item is ready (Cooldown of 500 ticks = 25 seconds)
             if (isCrit && !player.getCooldowns().isOnCooldown(this)) {
 
-                // Apply Blindness
-                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0));
+                // Apply Gilded Stasis
+                target.addEffect(new MobEffectInstance(GildedDoomModMobEffects.GILDED_STASIS, 100, 0));
 
                 // Play Sound
                 world.playSound(null, target.getX(), target.getY(), target.getZ(),

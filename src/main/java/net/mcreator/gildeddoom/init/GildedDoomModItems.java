@@ -32,6 +32,7 @@ import net.mcreator.gildeddoom.item.CleansingTomeItem;
 import net.mcreator.gildeddoom.item.ChippedAmalgamItem;
 import net.mcreator.gildeddoom.item.BrutalTomeItem;
 import net.mcreator.gildeddoom.item.BookOfGildedBanishmentItem;
+import net.mcreator.gildeddoom.item.BookOfDocumentationItem;
 import net.mcreator.gildeddoom.item.BloodGrapesItem;
 import net.mcreator.gildeddoom.item.AncientHammerItem;
 import net.mcreator.gildeddoom.GildedDoomMod;
@@ -89,6 +90,7 @@ public class GildedDoomModItems {
 	public static Item DEMENANITE_ORE;
 	public static Item DEMONIC_DUST;
 	public static Item BOOK_OF_GILDED_BANISHMENT;
+	public static Item BOOK_OF_DOCUMENTATION;
 
 	public static void load() {
 		IRON_HAMMER = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "iron_hammer"), new IronHammerItem());
@@ -164,5 +166,6 @@ public class GildedDoomModItems {
 		DEMENANITE_ORE = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "demenanite_ore"), new BlockItem(GildedDoomModBlocks.DEMENANITE_ORE, new Item.Properties().tab(GildedDoomModTabs.TAB_PURGATORY_TAB)));
 		DEMONIC_DUST = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "demonic_dust"), new DemonicDustItem());
 		BOOK_OF_GILDED_BANISHMENT = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "book_of_gilded_banishment"), new BookOfGildedBanishmentItem());
+		BOOK_OF_DOCUMENTATION = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "book_of_documentation"), new BookOfDocumentationItem());
 	}
 }

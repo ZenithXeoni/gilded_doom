@@ -35,6 +35,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -259,9 +263,6 @@
       "locked_code": false,
       "registry_name": "gilded_contract_rightclicked",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/GildedContractRightclickedOnBlockProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -900,6 +901,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1659,80 +1664,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/gilded_doom/advancements/cover_me_in_riches.json"
-        ]
-      }
-    },
-    {
-      "name": "PurgatoryFuckingDies",
-      "type": "procedure",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purgatory_fucking_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatoryFuckingDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PendingPurgatoryTimeIsUp",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pending_purgatory_time_is_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/PendingPurgatoryTimeIsUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -2932,9 +2863,6 @@
       "locked_code": false,
       "registry_name": "engrave_soul_on_death",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/EngraveSoulOnDeathProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -3032,6 +2960,65 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "BookOfDocumentation",
+      "type": "tool",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_documentation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/item/BookOfDocumentationItem.java",
+          "src/main/resources/assets/gilded_doom/models/item/book_of_documentation.json"
+        ]
+      }
+    },
+    {
+      "name": "BookOfDocumentationRightclicked",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "book_of_documentation_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/procedures/BookOfDocumentationRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rarity",
+      "type": "enchantment",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/enchantment/RarityEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "ShortFuse",
+      "type": "enchantment",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "short_fuse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gildeddoom/enchantment/ShortFuseEnchantment.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3108,10 +3095,8 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.got_any_glue": "Got any Glue?",
       "advancements.purgatory_complete.descr": "Escape from purgatory 2 times.",
-      "item.gilded_doom.hellforged_hammer": "Hellforged Hammer",
-      "gamerule.allowgildedbanishment": "Allow Gilded Banishment",
+      "subtitles.got_any_glue": "Got any Glue?",
       "item.gilded_doom.withering_tome": "Withering Tome",
       "block.gilded_doom.cracked_polished_purgatory_brick_slab": "Cracked Polished Purgatory Stone Brick Slab",
       "effect.gilded_doom.ultimate_power": "Ultimate Power",
@@ -3123,83 +3108,88 @@
       "effect.gilded_doom.gilded_empowerment": "Gilded Empowerment",
       "block.gilded_doom.purgatory_stone_stairs": "Purgatory Stone Stairs",
       "subtitles.ancient.hammer.smash": "Ancient Hammer Slam",
-      "item.gilded_doom.tracking_tome": "Tracking Tome",
-      "item.gilded_doom.brutal_tome": "Brutal Tome",
-      "block.gilded_doom.polished_purgatory_stone_bricks": "Polished Purgatory Stone Bricks",
-      "block.gilded_doom.polished_purgatory_stone_stairs": "Polished Purgatory Stone",
       "effect.gilded_doom.the_echo_fall_experience": "The Echofall Experience",
       "enchantment.gilded_doom.knockout.desc": "Has a chance to inflict Blindness when attacking, with the duration scaling according to how high the target\u0027s health is.",
       "block.gilded_doom.iron_infused_purgatory_stone": "Iron Infused Purgatory Stone",
       "advancements.cover_me_in_riches.descr": "Obtian a full set of Gilded Brute Armor.",
-      "entity.gilded_doom.duck": "Duck",
       "block.gilded_doom.cracked_purgatory_stone_brick_wall": "Cracked Polished Purgatory Stone Brick Wall",
-      "item.gilded_doom.chipped_amalgam": "Chipped Amalgam",
-      "advancements.freeatlast.descr": "Escape the hellish prison using the Purgatory Amalgam, the item that sent you there in the first place.",
       "block.gilded_doom.chiseled_polished_purgatory_bricks": "Chiseled Polished Purgatory Stone",
       "block.gilded_doom.polished_purgatory_stone_brick_wall": "Polished Purgatory Stone Brick Wall",
       "gamerule.book_unlocked.description": "Used as a conditional in Gilded Doom, global variables are funky :/",
       "item.gilded_doom.infernal_core": "Infernal Core",
       "gamerule.book_unlocked": "Book Unlocked",
-      "block.gilded_doom.polished_purgatory_stone_slab": "Polished Purgatory Stone Slab",
-      "item.gilded_doom.gilded_ingot": "Gilded Ingot",
       "gamerule.do_real_bans.description": "Decides weather Pending Death uses Real Bans + Purgatory Sending, Without this, purgatory will be inaccessable by normal means.",
       "subtitles.enchantment_torrent": "Torrent Launch",
-      "effect.gilded_doom.pending_death": "Pending Death",
-      "item.gilded_doom.gilded_core": "Gilded Core",
       "item.gilded_doom.gilded_brute_boots": "Gilded Brute Boots",
       "item.gilded_doom.iron_hammer": "Iron Hammer",
+      "effect.gilded_doom.deaths_mark": "Death\u0027s Mark",
+      "subtitles.ultimate_power_charge_up": "ultimate power charges up",
+      "block.gilded_doom.polished_purgatory_stone_brick_stairs": "Polished Purgatory Stone Brick Stairs",
+      "enchantment.gilded_doom.torrent.desc": "Launches entities up into the air when attacking",
+      "block.gilded_doom.purgatory_nylium": "Purgatory Nylium",
+      "enchantment.gilded_doom.short_fuse": "Short Fuse",
+      "item.gilded_doom.soulforged_hammer": "Soulforged Hammer",
+      "itemGroup.gilded_doom.gilded_doom": "Gilded Doom",
+      "block.gilded_doom.gilded_purgatory_stone_slab": "Gilded Purgatory Stone Slab",
+      "item.gilded_doom.immunity_tome": "Immunity Tome",
+      "block.gilded_doom.polished_purgatory_stone_brick_slab": "Polished Purgatory Stone Brick Slab",
+      "subtitles.ancient_hammer_slam": "Ancient Hammer Slam",
+      "gamerule.do_real_bans": "Do Real Bans",
+      "item.gilded_doom.demonic_dust": "Purgatory Dust",
+      "subtitles.got_any_grapes": "Got any Grapes?",
+      "item.gilded_doom.gilded_brute_chestplate": "Gilded Brute Chestplate",
+      "item.gilded_doom.book_of_documentation": "Book of Documentation",
+      "item.gilded_doom.purgatory_amalgam": "Purgatory Amalgam",
+      "block.gilded_doom.purgatory_stone": "Purgatory Stone",
+      "enchantment.gilded_doom.fortitude": "Fortitude",
+      "item.gilded_doom.hellforged_hammer": "Hellforged Hammer",
+      "gamerule.allowgildedbanishment": "Allow Gilded Banishment",
+      "enchantment.gilded_doom.rarity": "Rarity",
+      "item.gilded_doom.tracking_tome": "Tracking Tome",
+      "item.gilded_doom.brutal_tome": "Brutal Tome",
+      "block.gilded_doom.polished_purgatory_stone_bricks": "Polished Purgatory Stone Bricks",
+      "block.gilded_doom.polished_purgatory_stone_stairs": "Polished Purgatory Stone",
+      "entity.gilded_doom.duck": "Duck",
+      "item.gilded_doom.chipped_amalgam": "Chipped Amalgam",
+      "advancements.freeatlast.descr": "Escape the hellish prison using the Purgatory Amalgam, the item that sent you there in the first place.",
+      "block.gilded_doom.polished_purgatory_stone_slab": "Polished Purgatory Stone Slab",
+      "item.gilded_doom.gilded_ingot": "Gilded Ingot",
+      "effect.gilded_doom.pending_death": "Pending Death",
+      "item.gilded_doom.gilded_core": "Gilded Core",
       "effect.gilded_doom.gilded_immunity": "Gilded Immunity",
       "item.gilded_doom.gilded_brute_leggings": "Gilded Brute Leggings",
       "block.gilded_doom.demenanite_ore": "Redstone Infused Purgatory Stone",
-      "effect.gilded_doom.deaths_mark": "Death\u0027s Mark",
       "item.gilded_doom.free_me": "Free Me",
-      "subtitles.ultimate_power_charge_up": "ultimate power charges up",
       "item.gilded_doom.savage_duck_spawn_egg": "Savage Duck Spawn Egg",
       "enchantment.gilded_doom.fortitude.desc": "When attacking at low health, you gain resistance and slowness.",
-      "block.gilded_doom.polished_purgatory_stone_brick_stairs": "Polished Purgatory Stone Brick Stairs",
       "item.gilded_doom.warped_amalgam": "Warped Amalgam",
       "advancements.freeatlast.title": "Free, at last",
-      "block.gilded_doom.purgatory_nylium": "Purgatory Nylium",
-      "enchantment.gilded_doom.torrent.desc": "Launches entities up into the air when attacking",
       "gamerule.allowgildedbanishment.description": "Allows for the book of gilded banishment to be unlocked and allows ducks to be spawned from the chipped amalgam.",
       "enchantment.gilded_doom.purgatory_removal.desc": "Removes Pending Purgatory, but beware; Thou shall still haunt.",
       "block.gilded_doom.bleeding_obsidan": "Bleeding Obsidan",
-      "item.gilded_doom.soulforged_hammer": "Soulforged Hammer",
       "item.gilded_doom.book_of_gilded_banishment": "§6Book of Gilded Banishment",
       "block.gilded_doom.polished_purgatory_stone": "Polished Purgatory Stone",
-      "block.gilded_doom.gilded_purgatory_stone_slab": "Gilded Purgatory Stone Slab",
-      "itemGroup.gilded_doom.gilded_doom": "Gilded Doom",
       "enchantment.gilded_doom.banishment_removal.desc": "Removes Pending Death II, but beware; Thou shall still haunt.",
       "advancements.purgatory_bound.title": "The... End?",
       "block.gilded_doom.polished_purgatory_stone_wall": "Polished Purgatory Stone Wall",
       "block.gilded_doom.iron_infused_purgatory_stone_slab": "Iron Infused Purgatory Stone Slab",
-      "item.gilded_doom.immunity_tome": "Immunity Tome",
-      "block.gilded_doom.polished_purgatory_stone_brick_slab": "Polished Purgatory Stone Brick Slab",
       "item.gilded_doom.ancient_hammer": "Ancient Hammer",
       "block.gilded_doom.polished_purgatory_fence": "Polished Purgatory Stone Brick Wall",
       "effect.gilded_doom.the_echo_fall_experience.desc": "has a random chance to halt your momentum.",
-      "subtitles.ancient_hammer_slam": "Ancient Hammer Slam",
-      "gamerule.do_real_bans": "Do Real Bans",
       "enchantment.gilded_doom.torrent": "Torrent",
       "itemGroup.gilded_doom.purgatory_tab": "Purgatory",
       "item.gilded_doom.gilded_contract": "Gilded Contract",
-      "item.gilded_doom.demonic_dust": "Purgatory Dust",
       "item.gilded_doom.duck_spawn_egg": "Duck Spawn Egg",
       "item.gilded_doom.infernal_scrap": "Infernal Scrap",
       "advancements.purgatory_bound.descr": "Enter the hellish backrooms; Purgatory. ",
       "item.gilded_doom.gilded_banisher": "Gilded Banisher",
       "enchantment.gilded_doom.knockout": "Knockout",
       "block.gilded_doom.gilded_purgatory_stone": "Gilded Purgatory Stone",
-      "subtitles.got_any_grapes": "Got any Grapes?",
-      "item.gilded_doom.gilded_brute_chestplate": "Gilded Brute Chestplate",
       "subtitles.enchantment.torrent": "Torrent Launch",
       "advancements.purgatory_complete.title": "This Prison, to hold me?!",
-      "item.gilded_doom.purgatory_amalgam": "Purgatory Amalgam",
       "item.gilded_doom.blood_grapes": "Blood Grapes",
       "block.gilded_doom.cracked_polished_purgatory_stone_stairs": "Cracked Polished Purgatory Stone Bricks",
       "effect.gilded_doom.gilded_stasis": "Gilded Stasis",
-      "block.gilded_doom.purgatory_stone": "Purgatory Stone",
-      "enchantment.gilded_doom.fortitude": "Fortitude",
       "advancements.cover_me_in_riches.title": "Cover Me In Riches"
     }
   },
@@ -3217,7 +3207,7 @@
     "license": "All Rights Reserved",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "1b7e14aff9a33b521e18db7e2e099b4bb4c24bd7_96",
+    "modPicture": "image",
     "requiredMods": [
       "player_souls",
       "persistent_health_attributes"

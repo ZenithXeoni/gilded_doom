@@ -1,0 +1,7 @@
+{
+  "parent": "gilded_doom:custom/tracking_tome",
+  "textures": {
+    "8": "gilded_doom:blocks/gilded_tome_sculk",
+    "particle": "gilded_doom:items/soul_scrap"
+  }
+}

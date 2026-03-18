@@ -43,6 +43,7 @@ import net.mcreator.gildeddoom.procedures.DuckEntityDiesProcedure;
 import net.mcreator.gildeddoom.procedures.CleansingTomeRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.BrutalTomeRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.BookofGildedBanishmentItemInInventoryTickProcedure;
+import net.mcreator.gildeddoom.procedures.BookOfDocumentationRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.BloodGrapesPlayerFinishesUsingItemProcedure;
 import net.mcreator.gildeddoom.procedures.BleedingObsidianGenProcedure;
 import net.mcreator.gildeddoom.procedures.AntiSuicidalEscapeProcedure;
@@ -96,5 +97,6 @@ public class GildedDoomModProcedures {
 		new ObjectivePunishmentProcedure();
 		new PurgatorynuhfuckinguhProcedure();
 		new EngraveSoulOnDeathProcedure();
+		new BookOfDocumentationRightclickedProcedure();
 	}
 }

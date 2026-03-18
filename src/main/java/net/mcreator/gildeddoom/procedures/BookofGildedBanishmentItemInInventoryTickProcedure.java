@@ -55,7 +55,7 @@ public class BookofGildedBanishmentItemInInventoryTickProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player) {
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.GILDED_EMPOWERMENT, 60, 1, false, false));
+						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.GILDED_EMPOWERMENT, 60, 0, false, false));
 				}
 			}
 		}

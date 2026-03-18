@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "gilded_doom:iron_infused_purgatory_stone"
+  },
+  "result": "gilded_doom:iron_infused_purgatory_stone_slab"
+}

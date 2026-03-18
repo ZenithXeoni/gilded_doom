@@ -59,61 +59,20 @@ public class SoulforgedHitProcedure {
 				GildedDoomMod.LOGGER.warn("Failed to load dependency sourceentity for procedure SoulforgedHit!");
 			return;
 		}
+		if (dependencies.get("itemstack") == null) {
+			if (!dependencies.containsKey("itemstack"))
+				GildedDoomMod.LOGGER.warn("Failed to load dependency itemstack for procedure SoulforgedHit!");
+			return;
+		}
 		LevelAccessor world = (LevelAccessor) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false)) {
-			entity.setSecondsOnFire(8);
-			if ((EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.KNOCKOUT, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-					? !(Mth.nextInt(RandomSource.create(), 1, 2) == 1)
-					: Mth.nextInt(RandomSource.create(), 1, 4) == 1) || (entity.level.dimension()) == Level.NETHER) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-								_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "particle minecraft:soul_fire_flame ~ ~2 ~ .5 .5 .5 1 25 normal");
-					}
-				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), SoundEvents.WITHER_SHOOT, SoundSource.PLAYERS, 1, (float) 0.8);
-					} else {
-						_level.playLocalSound(x, y, z, SoundEvents.WITHER_SHOOT, SoundSource.PLAYERS, 1, (float) 0.8, false);
-					}
-				}
-				new Object() {
-					private int ticks = 0;
-
-					public void startDelay(LevelAccessor world) {
-						ServerTickEvents.END_SERVER_TICK.register((server) -> {
-							this.ticks++;
-							if (this.ticks == 1) {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, new BlockPos(x, y, z), SoundEvents.FIREWORK_ROCKET_BLAST, SoundSource.PLAYERS, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, SoundEvents.FIREWORK_ROCKET_BLAST, SoundSource.PLAYERS, 1, 1, false);
-									}
-								}
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, new BlockPos(x, y, z), SoundEvents.FIREWORK_ROCKET_LARGE_BLAST, SoundSource.PLAYERS, 1, 1);
-									} else {
-										_level.playLocalSound(x, y, z, SoundEvents.FIREWORK_ROCKET_LARGE_BLAST, SoundSource.PLAYERS, 1, 1, false);
-									}
-								}
-								return;
-							}
-						});
-					}
-				}.startDelay(world);
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 0));
-			}
-			if (Mth.nextInt(RandomSource.create(), 1, 16) == 1 && !((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.WITHERING_TOME)) {
+		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
+		if (EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.RARITY, itemstack) != 0) {
+			if (Mth.nextInt(RandomSource.create(), 1, 5) == 1 && !((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.WITHERING_TOME)) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(x, y, z), SoundEvents.WITHER_SKELETON_HURT, SoundSource.PLAYERS, 1, 1);
@@ -124,7 +83,68 @@ public class SoulforgedHitProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.THE_ECHO_FALL_EXPERIENCE, 200, 0));
 			}
+		} else {
+			if (!(entity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false)) {
+				entity.setSecondsOnFire(8);
+				if ((EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.KNOCKOUT, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
+						? !(Mth.nextInt(RandomSource.create(), 1, 2) == 1)
+						: Mth.nextInt(RandomSource.create(), 1, 4) == 1) || (entity.level.dimension()) == Level.NETHER) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "particle minecraft:soul_fire_flame ~ ~2 ~ .5 .5 .5 1 25 normal");
+						}
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z), SoundEvents.WITHER_SHOOT, SoundSource.PLAYERS, 1, (float) 0.8);
+						} else {
+							_level.playLocalSound(x, y, z, SoundEvents.WITHER_SHOOT, SoundSource.PLAYERS, 1, (float) 0.8, false);
+						}
+					}
+					new Object() {
+						private int ticks = 0;
+
+						public void startDelay(LevelAccessor world) {
+							ServerTickEvents.END_SERVER_TICK.register((server) -> {
+								this.ticks++;
+								if (this.ticks == 1) {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, new BlockPos(x, y, z), SoundEvents.FIREWORK_ROCKET_BLAST, SoundSource.PLAYERS, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, SoundEvents.FIREWORK_ROCKET_BLAST, SoundSource.PLAYERS, 1, 1, false);
+										}
+									}
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, new BlockPos(x, y, z), SoundEvents.FIREWORK_ROCKET_LARGE_BLAST, SoundSource.PLAYERS, 1, 1);
+										} else {
+											_level.playLocalSound(x, y, z, SoundEvents.FIREWORK_ROCKET_LARGE_BLAST, SoundSource.PLAYERS, 1, 1, false);
+										}
+									}
+									return;
+								}
+							});
+						}
+					}.startDelay(world);
+					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 0));
+				}
+				if (Mth.nextInt(RandomSource.create(), 1, 16) == 1 && !((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.WITHERING_TOME)) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z), SoundEvents.WITHER_SKELETON_HURT, SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, SoundEvents.WITHER_SKELETON_HURT, SoundSource.PLAYERS, 1, 1, false);
+						}
+					}
+					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.THE_ECHO_FALL_EXPERIENCE, 200, 0));
+				}
+			}
+			HammerEnchantsProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("entity", entity).put("sourceentity", sourceentity).build());
 		}
-		HammerEnchantsProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("entity", entity).put("sourceentity", sourceentity).build());
 	}
 }

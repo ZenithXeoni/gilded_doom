@@ -1,0 +1,7 @@
+{
+  "parent": "gilded_doom:custom/infernal_core",
+  "textures": {
+    "1": "gilded_doom:blocks/infernal_core",
+    "particle": "gilded_doom:items/infernal_scrap"
+  }
+}

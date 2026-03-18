@@ -51,7 +51,8 @@ public class SoulforgedHammerItem extends PickaxeItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 		Level world = entity.level;
-		SoulforgedHitProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("entity", entity).put("sourceentity", sourceentity).build());
+		SoulforgedHitProcedure
+				.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("entity", entity).put("sourceentity", sourceentity).put("itemstack", itemstack).build());
 		return retval;
 	}
 
