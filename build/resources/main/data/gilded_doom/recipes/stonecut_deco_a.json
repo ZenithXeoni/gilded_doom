@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "gilded_doom:purgatory_stone"
+  },
+  "result": "gilded_doom:purgatory_stone_slab"
+}
