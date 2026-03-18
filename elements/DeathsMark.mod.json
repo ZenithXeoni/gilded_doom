@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Death's Mark",
-    "icon": "deaths_mark_2.png",
+    "icon": "deaths_mark.png",
     "color": {
       "value": -13312,
       "falpha": 0.0

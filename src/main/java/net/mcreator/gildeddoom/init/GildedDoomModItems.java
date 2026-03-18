@@ -31,6 +31,7 @@ import net.mcreator.gildeddoom.item.DemonicDustItem;
 import net.mcreator.gildeddoom.item.CleansingTomeItem;
 import net.mcreator.gildeddoom.item.ChippedAmalgamItem;
 import net.mcreator.gildeddoom.item.BrutalTomeItem;
+import net.mcreator.gildeddoom.item.BookOfGildedBanishmentItem;
 import net.mcreator.gildeddoom.item.BloodGrapesItem;
 import net.mcreator.gildeddoom.item.AncientHammerItem;
 import net.mcreator.gildeddoom.GildedDoomMod;

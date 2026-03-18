@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "gilded_doom:blocks/cracked_polished_purgatory_stone_bricks",
-    "top": "gilded_doom:blocks/cracked_polished_purgatory_stone_bricks",
-    "side": "gilded_doom:blocks/cracked_polished_purgatory_stone_bricks"
-  },
-  "render_type": "solid"
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "gilded_doom:blocks/iron_infused_purgatory_stone",
-    "particle": "gilded_doom:blocks/iron_infused_purgatory_stone"
-  }
-}

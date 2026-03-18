@@ -900,6 +900,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1659,80 +1663,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/gilded_doom/advancements/cover_me_in_riches.json"
-        ]
-      }
-    },
-    {
-      "name": "PurgatoryFuckingDies",
-      "type": "procedure",
-      "sortid": 103,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purgatory_fucking_dies",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatoryFuckingDiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PendingPurgatoryTimeIsUp",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pending_purgatory_time_is_up",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/PendingPurgatoryTimeIsUpProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -3108,8 +3038,8 @@
   ],
   "language_map": {
     "en_us": {
-      "subtitles.got_any_glue": "Got any Glue?",
       "advancements.purgatory_complete.descr": "Escape from purgatory 2 times.",
+      "subtitles.got_any_glue": "Got any Glue?",
       "item.gilded_doom.hellforged_hammer": "Hellforged Hammer",
       "gamerule.allowgildedbanishment": "Allow Gilded Banishment",
       "item.gilded_doom.withering_tome": "Withering Tome",

@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/soulforged_hammer",
-  "textures": {
-    "2": "gilded_doom:blocks/soulforged_hammer",
-    "particle": "gilded_doom:items/soul_scrap"
-  }
-}

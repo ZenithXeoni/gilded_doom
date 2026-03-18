@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/withering_tome",
-  "textures": {
-    "8": "gilded_doom:blocks/withering_gilded_tome",
-    "particle": "gilded_doom:items/shittycontract"
-  }
-}

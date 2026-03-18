@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "gilded_doom:blocks/polished_purgatory_stone_bricks",
-    "particle": "gilded_doom:blocks/polished_purgatory_stone_bricks"
-  }
-}

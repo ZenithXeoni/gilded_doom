@@ -7,6 +7,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -18,6 +19,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.gildeddoom.init.GildedDoomModGameRules;
 import net.mcreator.gildeddoom.GildedDoomMod;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
@@ -78,168 +80,14 @@ public class AntiSuicidalEscapeProcedure {
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 				return 0;
 			}
-		}.getScore("pendingpurgatory", entity) == 1) {
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("pendingpurgatory");
-				if (_so == null)
-					_so = _sc.addObjective("pendingpurgatory", ObjectiveCriteria.DUMMY, Component.literal("pendingpurgatory"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
-			}
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("purgatory");
-				if (_so == null)
-					_so = _sc.addObjective("purgatory", ObjectiveCriteria.DUMMY, Component.literal("purgatory"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
-			}
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:block.respawn_anchor.ambient master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.73");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"italic\":true,\"color\":\"dark_red\"}");
-		}
-		if (new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("pendingdeath", entity) == 2 || new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("pendingdeath", entity) == 4) {
+		}.getScore("pendingdeath", entity) == 1 && !world.getLevelData().getGameRules().getBoolean(GildedDoomModGameRules.DO_REAL_BANS)) {
 			{
 				Entity _ent = entity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
 				Objective _so = _sc.getObjective("pendingdeath");
 				if (_so == null)
 					_so = _sc.addObjective("pendingdeath", ObjectiveCriteria.DUMMY, Component.literal("pendingdeath"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
-			}
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("deathcurse");
-				if (_so == null)
-					_so = _sc.addObjective("deathcurse", ObjectiveCriteria.DUMMY, Component.literal("deathcurse"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
-			}
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("SoulBanned");
-				if (_so == null)
-					_so = _sc.addObjective("SoulBanned", ObjectiveCriteria.DUMMY, Component.literal("SoulBanned"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
-			}
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:block.respawn_anchor.ambient master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.73");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.5");
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("ban " + entity.getDisplayName().getString() + "  Your time is over, rest well..."));
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"bold\":true,\"italic\":true,\"color\":\"yellow\"}");
-		}
-		if (new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("pendingdeath", entity) == 1 || new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("pendingdeath", entity) == 3) {
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("pendingdeath");
-				if (_so == null)
-					_so = _sc.addObjective("pendingdeath", ObjectiveCriteria.DUMMY, Component.literal("pendingdeath"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
-			}
-			{
-				Entity _ent = entity;
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective("deathcurse");
-				if (_so == null)
-					_so = _sc.addObjective("deathcurse", ObjectiveCriteria.DUMMY, Component.literal("deathcurse"), ObjectiveCriteria.RenderType.INTEGER);
-				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(5);
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -269,6 +117,140 @@ public class AntiSuicidalEscapeProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"italic\":true,\"color\":\"yellow\"}");
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.explode(null, x, y, z, 5, Explosion.BlockInteraction.DESTROY);
+		} else if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective(score);
+				if (_so != null)
+					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+				return 0;
+			}
+		}.getScore("pendingdeath", entity) == 1 && world.getLevelData().getGameRules().getBoolean(GildedDoomModGameRules.DO_REAL_BANS)) {
+			if (new Object() {
+				public int getScore(String score, Entity _ent) {
+					Scoreboard _sc = _ent.getLevel().getScoreboard();
+					Objective _so = _sc.getObjective(score);
+					if (_so != null)
+						return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+					return 0;
+				}
+			}.getScore("Soulless", entity) == 1) {
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.getLevel().getScoreboard();
+					Objective _so = _sc.getObjective("pendingdeath");
+					if (_so == null)
+						_so = _sc.addObjective("pendingdeath", ObjectiveCriteria.DUMMY, Component.literal("pendingdeath"), ObjectiveCriteria.RenderType.INTEGER);
+					_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(5);
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.getLevel().getScoreboard();
+					Objective _so = _sc.getObjective("Soulbanned");
+					if (_so == null)
+						_so = _sc.addObjective("Soulbanned", ObjectiveCriteria.DUMMY, Component.literal("Soulbanned"), ObjectiveCriteria.RenderType.INTEGER);
+					_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
+				}
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:block.respawn_anchor.ambient master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.73");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							("ban " + entity.getDisplayName().getString() + " Your time is over, rest well..."));
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"bold\":true,\"italic\":true,\"color\":\"yellow\"}");
+			} else {
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.getLevel().getScoreboard();
+					Objective _so = _sc.getObjective("purgatory");
+					if (_so == null)
+						_so = _sc.addObjective("purgatory", ObjectiveCriteria.DUMMY, Component.literal("purgatory"), ObjectiveCriteria.RenderType.INTEGER);
+					_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
+				}
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:block.respawn_anchor.ambient master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.73");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"playsound minecraft:ambient.cave master @a ~ ~ ~ 1 0.5");
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				if (world instanceof ServerLevel _level) {
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(x, y, z)));
+					entityToSpawn.setVisualOnly(true);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"italic\":true,\"color\":\"dark_red\"}");
+			}
+		}
+		if (new Object() {
+			public int getScore(String score, Entity _ent) {
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective(score);
+				if (_so != null)
+					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+				return 0;
+			}
+		}.getScore("pendingdeath", entity) == 5) {
+			{
+				Entity _ent = entity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("pendingdeath");
+				if (_so == null)
+					_so = _sc.addObjective("pendingdeath", ObjectiveCriteria.DUMMY, Component.literal("pendingdeath"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
+			}
 		}
 	}
 }

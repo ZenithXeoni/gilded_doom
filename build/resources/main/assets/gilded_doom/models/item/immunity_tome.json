@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/immunity_tome",
-  "textures": {
-    "9": "gilded_doom:blocks/gilded_tome_gold",
-    "particle": "gilded_doom:items/shittycontract"
-  }
-}

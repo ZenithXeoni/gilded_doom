@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/brutal_tome",
-  "textures": {
-    "8": "gilded_doom:blocks/gilded_tome_iron",
-    "particle": "gilded_doom:items/shittycontract"
-  }
-}

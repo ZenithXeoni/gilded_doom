@@ -274,7 +274,7 @@ public class NeptuniteOnlyProcedure {
 											_so = _sc.addObjective("purgatory", ObjectiveCriteria.DUMMY, Component.literal("purgatory"), ObjectiveCriteria.RenderType.INTEGER);
 										_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
 									}
-									PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
+									PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
 								}
 								return;
 							}

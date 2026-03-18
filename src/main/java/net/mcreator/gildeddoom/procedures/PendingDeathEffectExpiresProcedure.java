@@ -299,7 +299,7 @@ public class PendingDeathEffectExpiresProcedure {
 					entityToSpawn.setVisualOnly(true);
 					_level.addFreshEntity(entityToSpawn);
 				}
-				PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
+				PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, x, y, z, 10, Explosion.BlockInteraction.DESTROY);
 				if (world instanceof ServerLevel _level)

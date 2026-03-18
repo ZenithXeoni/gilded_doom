@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "gilded_doom:blocks/gilded_purgatory_stone",
-    "particle": "gilded_doom:blocks/gilded_purgatory_stone"
-  }
-}

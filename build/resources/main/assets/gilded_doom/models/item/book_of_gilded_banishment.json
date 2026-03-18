@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/book_of_gilded_banishment",
-  "textures": {
-    "1": "gilded_doom:blocks/book_of_gilded_banishment",
-    "particle": "gilded_doom:items/shittycontract"
-  }
-}

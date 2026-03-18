@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/gilded_core",
-  "textures": {
-    "1": "gilded_doom:blocks/gilded_core",
-    "particle": "gilded_doom:items/ancient_hammer_2d"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "gilded_doom:custom/hellforged_hammer",
-  "textures": {
-    "2": "gilded_doom:blocks/hellforged_hammer",
-    "particle": "gilded_doom:items/infernal_scrap"
-  }
-}
