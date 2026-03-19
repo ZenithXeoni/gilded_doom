@@ -35,10 +35,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2759,10 +2755,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -3153,7 +3145,7 @@
       "block.gilded_doom.polished_purgatory_stone_brick_slab": "Polished Purgatory Stone Brick Slab",
       "subtitles.ancient_hammer_slam": "Ancient Hammer Slam",
       "gamerule.do_real_bans": "Do Real Bans",
-      "item.gilded_doom.demonic_dust": "Purgatory Dust",
+      "item.gilded_doom.demonic_dust": "Demonic Dust",
       "subtitles.got_any_grapes": "Got any Grapes?",
       "item.gilded_doom.gilded_brute_chestplate": "Gilded Brute Chestplate",
       "item.gilded_doom.book_of_documentation": "Book of Documentation",
@@ -3176,7 +3168,7 @@
       "item.gilded_doom.gilded_core": "Gilded Core",
       "effect.gilded_doom.gilded_immunity": "Gilded Immunity",
       "item.gilded_doom.gilded_brute_leggings": "Gilded Brute Leggings",
-      "block.gilded_doom.demenanite_ore": "Redstone Infused Purgatory Stone",
+      "block.gilded_doom.demenanite_ore": "Demenanite Ore",
       "item.gilded_doom.free_me": "Free Me",
       "item.gilded_doom.savage_duck_spawn_egg": "Savage Duck Spawn Egg",
       "enchantment.gilded_doom.fortitude.desc": "When attacking at low health, you gain resistance and slowness.",
@@ -3218,7 +3210,7 @@
   "workspaceSettings": {
     "modid": "gilded_doom",
     "modName": "Gilded Doom",
-    "version": "2.2.3",
+    "version": "2.3.0",
     "description": "Weaponry mod themed around piglins. adds better bartering, new weapons, and more!",
     "author": "Xeoni",
     "websiteURL": "https://modrinth.com/user/Xeoni",

@@ -179,18 +179,5 @@ public class HammerEnchantsProcedure {
 				}
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.RARITY, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 60, 2));
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), SoundEvents.ELDER_GUARDIAN_CURSE, SoundSource.NEUTRAL, 1, 1);
-					} else {
-						_level.playLocalSound(x, y, z, SoundEvents.ELDER_GUARDIAN_CURSE, SoundSource.NEUTRAL, 1, 1, false);
-					}
-				}
-			}
-		}
 	}
 }

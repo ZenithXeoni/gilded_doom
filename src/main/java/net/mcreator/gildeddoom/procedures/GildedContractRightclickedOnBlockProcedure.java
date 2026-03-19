@@ -177,7 +177,7 @@ public class GildedContractRightclickedOnBlockProcedure {
 										_player.displayClientMessage(Component.literal("\u00A76\u00A7o--"), false);
 									if (entity instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(Component.literal(
-												"\u00A76\u00A7oYou must first have a Gilded Banisher. Once you have that item, hitting someone has a 25% chance to inflict Death\u2019s Mark. When someone is under Death\u2019s Mark, and they get hit with your gilded banisher at Half Health, they receive Pending Death. "),
+												"\u00A76\u00A7oYou must first have a Gilded Banisher. Once you have that item, hitting someone has a 25% chance to inflict Death\u2019s Mark. When someone is under Death\u2019s Mark, and they get hit with your gilded banisher at 3.5 Hearts or lower, they will receive Pending Death. "),
 												false);
 									if (entity instanceof Player _player && !_player.level.isClientSide())
 										_player.displayClientMessage(Component.literal("\u00A76\u00A7o--"), false);

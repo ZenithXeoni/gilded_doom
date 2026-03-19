@@ -1,0 +1,7 @@
+{
+  "parent": "gilded_doom:custom/book",
+  "textures": {
+    "7": "gilded_doom:blocks/concept3_1",
+    "particle": "gilded_doom:items/shittycontract"
+  }
+}

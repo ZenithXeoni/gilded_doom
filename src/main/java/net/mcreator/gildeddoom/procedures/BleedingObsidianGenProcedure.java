@@ -1,5 +1,7 @@
 package net.mcreator.gildeddoom.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
@@ -61,10 +63,36 @@ public class BleedingObsidianGenProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof Player && ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.OBSIDIAN || (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.CRYING_OBSIDIAN)) {
-			world.setBlock(new BlockPos(x, y - 1, z), GildedDoomModBlocks.BLEEDING_OBSIDAN.defaultBlockState(), 3);
+			{
+				BlockPos _bp = new BlockPos(x, y - 1, z);
+				BlockState _bs = GildedDoomModBlocks.BLEEDING_OBSIDAN.defaultBlockState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.getValue(_property) != null)
+						try {
+							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
+						}
+				}
+				world.setBlock(_bp, _bs, 3);
+			}
 		}
 		if (entity instanceof Player && (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == GildedDoomModBlocks.PURGATORY_STONE) {
-			world.setBlock(new BlockPos(x, y - 1, z), GildedDoomModBlocks.DEMENANITE_ORE.defaultBlockState(), 3);
+			{
+				BlockPos _bp = new BlockPos(x, y - 1, z);
+				BlockState _bs = GildedDoomModBlocks.DEMENANITE_ORE.defaultBlockState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.getValue(_property) != null)
+						try {
+							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
+						}
+				}
+				world.setBlock(_bp, _bs, 3);
+			}
 		}
 	}
 }

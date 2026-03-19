@@ -14,7 +14,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.gildeddoom.procedures.GildedContractRightclickedOnBlockProcedure;
+import net.mcreator.gildeddoom.procedures.BookOfDocumentationRightclickedProcedure;
 import net.mcreator.gildeddoom.init.GildedDoomModTabs;
 
 import net.fabricmc.api.Environment;
@@ -54,8 +54,7 @@ public class BookOfDocumentationItem extends PickaxeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		GildedContractRightclickedOnBlockProcedure
-				.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("x", entity.getX()).put("y", entity.getY()).put("z", entity.getZ()).put("world", world).put("entity", entity).put("itemstack", ar.getObject()).build());
+		BookOfDocumentationRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
 		return ar;
 	}
 

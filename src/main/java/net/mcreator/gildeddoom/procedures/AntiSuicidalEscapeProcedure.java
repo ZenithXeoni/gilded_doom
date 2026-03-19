@@ -193,6 +193,14 @@ public class AntiSuicidalEscapeProcedure {
 				{
 					Entity _ent = entity;
 					Scoreboard _sc = _ent.getLevel().getScoreboard();
+					Objective _so = _sc.getObjective("pendingdeath");
+					if (_so == null)
+						_so = _sc.addObjective("pendingdeath", ObjectiveCriteria.DUMMY, Component.literal("pendingdeath"), ObjectiveCriteria.RenderType.INTEGER);
+					_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(5);
+				}
+				{
+					Entity _ent = entity;
+					Scoreboard _sc = _ent.getLevel().getScoreboard();
 					Objective _so = _sc.getObjective("purgatory");
 					if (_so == null)
 						_so = _sc.addObjective("purgatory", ObjectiveCriteria.DUMMY, Component.literal("purgatory"), ObjectiveCriteria.RenderType.INTEGER);

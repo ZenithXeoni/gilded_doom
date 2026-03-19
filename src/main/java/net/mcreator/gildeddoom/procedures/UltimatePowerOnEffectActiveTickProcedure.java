@@ -53,19 +53,7 @@ public class UltimatePowerOnEffectActiveTickProcedure {
 			}
 		}.getScore("user_has_ultimate_power", entity) == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.ULTIMATE_POWER, 200, 0));
-		}
-		if (world.getLevelData().getGameRules().getBoolean(GildedDoomModGameRules.ALLOWGILDEDBANISHMENT) && new Object() {
-			public int getScore(String score, Entity _ent) {
-				Scoreboard _sc = _ent.getLevel().getScoreboard();
-				Objective _so = _sc.getObjective(score);
-				if (_so != null)
-					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
-				return 0;
-			}
-		}.getScore("user_has_ultimate_power", entity) == 2) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.ULTIMATE_POWER, 200, 1));
+				_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.ULTIMATE_POWER, 60, 0, true, false));
 		}
 	}
 }

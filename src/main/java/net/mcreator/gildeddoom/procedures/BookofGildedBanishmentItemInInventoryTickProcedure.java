@@ -39,23 +39,17 @@ public class BookofGildedBanishmentItemInInventoryTickProcedure {
 				GildedDoomMod.LOGGER.warn("Failed to load dependency z for procedure BookofGildedBanishmentItemInInventoryTick!");
 			return;
 		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				GildedDoomMod.LOGGER.warn("Failed to load dependency entity for procedure BookofGildedBanishmentItemInInventoryTick!");
-			return;
-		}
 		LevelAccessor world = (LevelAccessor) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		Entity entity = (Entity) dependencies.get("entity");
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(50 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player) {
-					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.GILDED_EMPOWERMENT, 60, 0, false, false));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level.isClientSide())
+						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.GILDED_EMPOWERMENT, 60, 0, true, false));
 				}
 			}
 		}

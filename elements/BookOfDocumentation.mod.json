@@ -32,7 +32,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "GildedContractRightclickedOnBlock"
+      "name": "BookOfDocumentationRightclicked"
     }
   }
 }
