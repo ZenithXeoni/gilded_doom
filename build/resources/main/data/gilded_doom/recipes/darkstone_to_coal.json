@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "gilded_doom:purgatory_stone"
+    },
+    "1": {
+      "item": "gilded_doom:purgatory_stone"
+    },
+    "2": {
+      "item": "gilded_doom:iron_hammer"
+    }
+  },
+  "result": {
+    "item": "minecraft:coal",
+    "count": 1
+  }
+}

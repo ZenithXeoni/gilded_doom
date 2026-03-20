@@ -1,0 +1,7 @@
+{
+  "parent": "gilded_doom:custom/cleansing_tome",
+  "textures": {
+    "8": "gilded_doom:blocks/gilded_tome_cure",
+    "particle": "gilded_doom:items/shittycontract"
+  }
+}
