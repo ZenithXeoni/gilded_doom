@@ -52,7 +52,7 @@ public class TrackingTomeRightclickedProcedure {
 				if (!((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) : false) || (entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.INVISIBILITY) : false)
 						|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(GildedDoomModMobEffects.GILDED_IMMUNITY) : false)
 						|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE) : false))
-						&& (entityiterator.getDisplayName().getString()).equals((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("PlayerSoul"))) {
+						&& (entityiterator.getScoreboardName()).equals((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("PlayerSoul"))) {
 					entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entityiterator.getX()), y, (entityiterator.getZ())));
 					if (entityiterator instanceof Player _player && !_player.level.isClientSide())
 						_player.displayClientMessage(Component.literal("You are being tracked."), true);

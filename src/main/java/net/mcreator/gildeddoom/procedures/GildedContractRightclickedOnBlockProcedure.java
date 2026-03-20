@@ -68,7 +68,7 @@ public class GildedContractRightclickedOnBlockProcedure {
 		if (!itemstack.getOrCreateTag().getBoolean("SoulPresent") && (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(GildedDoomModMobEffects.GILDED_EMPOWERMENT) : false) && entity.isShiftKeyDown()) {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 60);
-			if ((itemstack.getOrCreateTag().getString("MessageSoul")).equals(entity.getDisplayName().getString()) && itemstack.getOrCreateTag().getBoolean("UPMessageGiven")) {
+			if ((itemstack.getOrCreateTag().getString("MessageSoul")).equals(entity.getScoreboardName()) && itemstack.getOrCreateTag().getBoolean("UPMessageGiven")) {
 				itemstack.getOrCreateTag().putString("PlayerSoul", entity.getScoreboardName());
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -221,12 +221,12 @@ public class GildedContractRightclickedOnBlockProcedure {
 					}
 				}
 				itemstack.getOrCreateTag().putBoolean("UPMessageGiven", true);
-				itemstack.getOrCreateTag().putString("MessageSoul", (entity.getDisplayName().getString()));
+				itemstack.getOrCreateTag().putString("MessageSoul", entity.getScoreboardName());
 			}
 		} else if (!itemstack.getOrCreateTag().getBoolean("SoulPresent")) {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
-			if ((itemstack.getOrCreateTag().getString("MessageSoul")).equals(entity.getDisplayName().getString()) && itemstack.getOrCreateTag().getBoolean("MessageGiven")) {
+			if ((itemstack.getOrCreateTag().getString("MessageSoul")).equals(entity.getScoreboardName()) && itemstack.getOrCreateTag().getBoolean("MessageGiven")) {
 				itemstack.getOrCreateTag().putString("PlayerSoul", entity.getScoreboardName());
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -257,7 +257,7 @@ public class GildedContractRightclickedOnBlockProcedure {
 					}
 				}
 				itemstack.getOrCreateTag().putBoolean("MessageGiven", true);
-				itemstack.getOrCreateTag().putString("MessageSoul", (entity.getDisplayName().getString()));
+				itemstack.getOrCreateTag().putString("MessageSoul", entity.getScoreboardName());
 			}
 		} else if (itemstack.getOrCreateTag().getBoolean("SoulPresent") && (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(GildedDoomModMobEffects.GILDED_EMPOWERMENT) : false) && entity.isShiftKeyDown()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())

@@ -30,6 +30,9 @@
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "GildedBanisherRightclicked"
+    },
     "onEntityHitWith": {
       "name": "GildedBanisherLivingEntityIsHitWithTool"
     }

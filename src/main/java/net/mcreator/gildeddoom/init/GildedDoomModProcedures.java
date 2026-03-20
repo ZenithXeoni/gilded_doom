@@ -34,6 +34,7 @@ import net.mcreator.gildeddoom.procedures.GildedImmunityOnEffectActiveTickProced
 import net.mcreator.gildeddoom.procedures.GildedContractRightclickedOnBlockProcedure;
 import net.mcreator.gildeddoom.procedures.GildedBruteLeggingsTickEventProcedure;
 import net.mcreator.gildeddoom.procedures.GildedBruteHelmetTickEventProcedure;
+import net.mcreator.gildeddoom.procedures.GildedBanisherRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.GildedBanisherLivingEntityIsHitWithToolProcedure;
 import net.mcreator.gildeddoom.procedures.FreeMeRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.EngraveSoulOnDeathProcedure;
@@ -98,5 +99,6 @@ public class GildedDoomModProcedures {
 		new PurgatorynuhfuckinguhProcedure();
 		new EngraveSoulOnDeathProcedure();
 		new BookOfDocumentationRightclickedProcedure();
+		new GildedBanisherRightclickedProcedure();
 	}
 }
