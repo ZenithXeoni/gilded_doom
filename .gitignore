@@ -1,1 +1,8 @@
 /run/
+/gilded_doom_client.launch
+/gilded_doom_server.launch
+/build/
+/.idea/
+/.gradle/
+/.mcreator/
+/.project
