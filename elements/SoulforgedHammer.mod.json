@@ -22,6 +22,9 @@
     "repairItems": [
       {
         "value": "CUSTOM:InfernalScrap"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
       }
     ],
     "immuneToFire": true,

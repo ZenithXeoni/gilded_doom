@@ -5,6 +5,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
@@ -39,7 +40,7 @@ public class SoulforgedHammerItem extends PickaxeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(GildedDoomModItems.INFERNAL_SCRAP));
+				return Ingredient.of(new ItemStack(GildedDoomModItems.INFERNAL_SCRAP), new ItemStack(Items.NETHERITE_SCRAP));
 			}
 		}, 1, -3f, new Item.Properties().tab(GildedDoomModTabs.TAB_GILDED_DOOM).fireResistant());
 	}

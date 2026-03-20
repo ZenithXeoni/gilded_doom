@@ -42,8 +42,8 @@ tasks.withType(JavaCompile).configureEach {
     }
 }
 
-tasks.register('sourcesJar', Jar) {
-    archiveClassifier = 'sources'
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = "sources"
     from sourceSets.main.allSource
 }
 

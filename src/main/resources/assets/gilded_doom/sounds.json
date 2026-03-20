@@ -1,20 +1,20 @@
 {
-  "got_any_grapes": {
-    "category": "master",
-    "subtitle": "subtitles.got_any_grapes",
-    "sounds": [
-      {
-        "name": "gilded_doom:ray_saying_got_any_grapes",
-        "stream": false
-      }
-    ]
-  },
   "got_any_glue": {
     "category": "master",
     "subtitle": "subtitles.got_any_glue",
     "sounds": [
       {
         "name": "gilded_doom:ray_saying_got_any_glue",
+        "stream": false
+      }
+    ]
+  },
+  "got_any_grapes": {
+    "category": "master",
+    "subtitle": "subtitles.got_any_grapes",
+    "sounds": [
+      {
+        "name": "gilded_doom:ray_saying_got_any_grapes",
         "stream": false
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Pending Death Time In Ticks",
+    "description": "Sets the duration of Pending Death when applied",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 6000
+  }
+}

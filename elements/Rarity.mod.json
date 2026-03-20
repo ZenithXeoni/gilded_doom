@@ -1,0 +1,47 @@
+{
+  "_fv": 43,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Rarity",
+    "type": "BREAKABLE",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Torrent"
+      },
+      {
+        "value": "CUSTOM:Fortitude"
+      },
+      {
+        "value": "CUSTOM:Knockout"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:AncientHammer"
+      },
+      {
+        "value": "CUSTOM:IronHammer"
+      },
+      {
+        "value": "CUSTOM:HellforgedHammer"
+      },
+      {
+        "value": "CUSTOM:SoulforgedHammer"
+      },
+      {
+        "value": "CUSTOM:GildedBanisher"
+      }
+    ],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

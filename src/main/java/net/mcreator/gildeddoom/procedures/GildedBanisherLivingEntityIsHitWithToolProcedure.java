@@ -25,6 +25,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.gildeddoom.init.GildedDoomModMobEffects;
 import net.mcreator.gildeddoom.init.GildedDoomModItems;
+import net.mcreator.gildeddoom.init.GildedDoomModGameRules;
 import net.mcreator.gildeddoom.init.GildedDoomModEnchantments;
 import net.mcreator.gildeddoom.GildedDoomMod;
 
@@ -134,7 +135,7 @@ public class GildedBanisherLivingEntityIsHitWithToolProcedure {
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 0));
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.PENDING_DEATH, 6000, 0));
+						_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.PENDING_DEATH, (world.getLevelData().getGameRules().getInt(GildedDoomModGameRules.PENDING_DEATH_TIME_IN_TICKS)), 0));
 					{
 						Entity _ent = entity;
 						Scoreboard _sc = _ent.getLevel().getScoreboard();
