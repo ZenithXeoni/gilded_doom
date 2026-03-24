@@ -1,5 +1,6 @@
 package net.mcreator.gildeddoom.procedures;
 
+import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.level.LevelAccessor;
@@ -54,8 +55,28 @@ public class NopeNotHappeningProcedure {
 			}
 		}.getScore("purgatory", entity) == 1 && !((ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension"))) == (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD))) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Oh no you dont."), false);
+				_player.displayClientMessage(Component.literal("\u00A74<???> Oh no you dont."), false);
 			PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
+		}
+		if (!(new Object() {
+			public int getScore(String score, Entity _ent) {
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective(score);
+				if (_so != null)
+					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+				return 0;
+			}
+		}.getScore("purgatory", entity) == 1) && (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension"))) == (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD)) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal("\u00A74<???> Oh no you dont."), false);
+			{
+				Entity _ent = entity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("purgatory");
+				if (_so == null)
+					_so = _sc.addObjective("purgatory", ObjectiveCriteria.DUMMY, Component.literal("purgatory"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(1);
+			}
 		}
 	}
 }

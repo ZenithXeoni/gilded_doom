@@ -2844,25 +2844,6 @@
       }
     },
     {
-      "name": "Purgatorynuhfuckinguh",
-      "type": "procedure",
-      "sortid": 181,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "purgatorynuhfuckinguh",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gildeddoom/procedures/PurgatorynuhfuckinguhProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "EngraveSoulOnDeath",
       "type": "procedure",
       "sortid": 182,
@@ -3093,6 +3074,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "DemenaniteCraft",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demenanite_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gilded_doom/recipes/demenanite_craft.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3173,10 +3167,10 @@
       "subtitles.got_any_glue": "Got any Glue?",
       "item.gilded_doom.withering_tome": "Withering Tome",
       "block.gilded_doom.cracked_polished_purgatory_brick_slab": "Cracked Polished Purgatory Stone Brick Slab",
-      "entity.gilded_doom.savage_duck": "Savage Duck",
       "effect.gilded_doom.ultimate_power": "Ultimate Power",
-      "block.gilded_doom.cracked_polished_purgatory_bricks": "Cracked Polished Purgatory Stone Bricks",
+      "entity.gilded_doom.savage_duck": "Savage Duck",
       "block.gilded_doom.purgatory_stone_slab": "Purgatory Stone Slab",
+      "block.gilded_doom.cracked_polished_purgatory_bricks": "Cracked Polished Purgatory Stone Bricks",
       "item.gilded_doom.cleansing_tome": "Cleansing Tome",
       "item.gilded_doom.gilded_brute_helmet": "Gilded Brute Helmet",
       "effect.gilded_doom.gilded_empowerment": "Gilded Empowerment",
@@ -3193,19 +3187,19 @@
       "gamerule.book_unlocked.description": "Used as a conditional in Gilded Doom, global variables are funky :/",
       "item.gilded_doom.infernal_core": "Infernal Core",
       "gamerule.book_unlocked": "Book Unlocked",
-      "gamerule.do_real_bans.description": "Decides weather Pending Death uses Real Bans + Purgatory Sending, Without this, purgatory will be inaccessable by normal means.",
+      "gamerule.do_real_bans.description": "Decides weather Pending Death uses Perma Bans + Purgatory Sending.. Purgatory will still be accessable via deathcurse overflow",
       "subtitles.enchantment_torrent": "Torrent Launch",
       "item.gilded_doom.gilded_brute_boots": "Gilded Brute Boots",
       "item.gilded_doom.iron_hammer": "Iron Hammer",
       "effect.gilded_doom.deaths_mark": "Death\u0027s Mark",
       "subtitles.ultimate_power_charge_up": "ultimate power charges up",
       "block.gilded_doom.polished_purgatory_stone_brick_stairs": "Polished Purgatory Stone Brick Stairs",
-      "block.gilded_doom.purgatory_nylium": "Purgatory Nylium",
       "enchantment.gilded_doom.torrent.desc": "Launches entities up into the air when attacking",
+      "block.gilded_doom.purgatory_nylium": "Purgatory Nylium",
       "enchantment.gilded_doom.short_fuse": "Short Fuse",
       "item.gilded_doom.soulforged_hammer": "Soulforged Hammer",
-      "block.gilded_doom.gilded_purgatory_stone_slab": "Gilded Purgatory Stone Slab",
       "itemGroup.gilded_doom.gilded_doom": "Gilded Doom",
+      "block.gilded_doom.gilded_purgatory_stone_slab": "Gilded Purgatory Stone Slab",
       "item.gilded_doom.immunity_tome": "Immunity Tome",
       "block.gilded_doom.polished_purgatory_stone_brick_slab": "Polished Purgatory Stone Brick Slab",
       "subtitles.ancient_hammer_slam": "Ancient Hammer Slam",
@@ -3226,7 +3220,7 @@
       "block.gilded_doom.polished_purgatory_stone_stairs": "Polished Purgatory Stone",
       "entity.gilded_doom.duck": "Duck",
       "item.gilded_doom.chipped_amalgam": "Chipped Amalgam",
-      "advancements.freeatlast.descr": "Escape the hellish prison using the Purgatory Amalgam, the item that sent you there in the first place.",
+      "advancements.freeatlast.descr": "Escape the hellish prison by ridding a chunk of the vermin inside of Purgatory",
       "block.gilded_doom.polished_purgatory_stone_slab": "Polished Purgatory Stone Slab",
       "item.gilded_doom.gilded_ingot": "Gilded Ingot",
       "effect.gilded_doom.pending_death": "Pending Death",
@@ -3245,7 +3239,7 @@
       "item.gilded_doom.book_of_gilded_banishment": "§6Book of Gilded Banishment",
       "block.gilded_doom.polished_purgatory_stone": "Polished Purgatory Stone",
       "enchantment.gilded_doom.banishment_removal.desc": "Removes Pending Death II, but beware; Thou shall still haunt.",
-      "advancements.purgatory_bound.title": "The... End?",
+      "advancements.purgatory_bound.title": "The... Nether?",
       "block.gilded_doom.polished_purgatory_stone_wall": "Polished Purgatory Stone Wall",
       "block.gilded_doom.iron_infused_purgatory_stone_slab": "Iron Infused Purgatory Stone Slab",
       "enchantment.gilded_doom.rarity.desc": "Removes all base functions from the Hammer to allow for an increased chance to inflict rare inflictions. If the hammer does not have a rare infliction, a rare infliction will be set according to the hammer.",
@@ -3257,7 +3251,7 @@
       "item.gilded_doom.gilded_contract": "Gilded Contract",
       "item.gilded_doom.duck_spawn_egg": "Duck Spawn Egg",
       "item.gilded_doom.infernal_scrap": "Infernal Scrap",
-      "advancements.purgatory_bound.descr": "Enter the hellish backrooms; Purgatory. ",
+      "advancements.purgatory_bound.descr": "Enter the deepest location inside of Hell, Purgatory. Once a barren location, now filled with vermin.",
       "gamerule.pending_death_time_in_ticks.description": "Sets the duration of Pending Death when applied",
       "item.gilded_doom.gilded_banisher": "Gilded Banisher",
       "enchantment.gilded_doom.knockout": "Knockout",
@@ -3277,7 +3271,7 @@
   "workspaceSettings": {
     "modid": "gilded_doom",
     "modName": "Gilded Doom",
-    "version": "2.3.4",
+    "version": "2.3.6",
     "description": "Weaponry mod themed around piglins. adds better bartering, new weapons, and more!",
     "author": "Xeoni",
     "websiteURL": "https://modrinth.com/user/Xeoni",

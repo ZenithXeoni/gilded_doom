@@ -9,7 +9,7 @@ import net.mcreator.gildeddoom.init.GildedDoomModTabs;
 
 public class DemonicDustItem extends Item {
 	public DemonicDustItem() {
-		super(new Item.Properties().tab(GildedDoomModTabs.TAB_PURGATORY_TAB).stacksTo(4).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(GildedDoomModTabs.TAB_PURGATORY_TAB).stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override

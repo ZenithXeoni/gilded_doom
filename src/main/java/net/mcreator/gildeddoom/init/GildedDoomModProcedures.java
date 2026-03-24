@@ -14,7 +14,6 @@ import net.mcreator.gildeddoom.procedures.TheEchoFallExpirenceOnEffectActiveTick
 import net.mcreator.gildeddoom.procedures.SoulforgedHitProcedure;
 import net.mcreator.gildeddoom.procedures.SoulforgedAuraProcedure;
 import net.mcreator.gildeddoom.procedures.SavageDuckEntityIsHurtProcedure;
-import net.mcreator.gildeddoom.procedures.PurgatorynuhfuckinguhProcedure;
 import net.mcreator.gildeddoom.procedures.PurgatoryAmalgamRightclickedRealProcedure;
 import net.mcreator.gildeddoom.procedures.PurgatoryAmalgamRightclickedProcedure;
 import net.mcreator.gildeddoom.procedures.PendingfuckingDiesProcedure;
@@ -96,7 +95,6 @@ public class GildedDoomModProcedures {
 		new BookofGildedBanishmentItemInInventoryTickProcedure();
 		new BloodGrapesPlayerFinishesUsingItemProcedure();
 		new ObjectivePunishmentProcedure();
-		new PurgatorynuhfuckinguhProcedure();
 		new EngraveSoulOnDeathProcedure();
 		new BookOfDocumentationRightclickedProcedure();
 		new GildedBanisherRightclickedProcedure();

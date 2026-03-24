@@ -3,8 +3,6 @@ package net.mcreator.gildeddoom.procedures;
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Objective;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.piglin.Piglin;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Blaze;
@@ -14,7 +12,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Registry;
 
-import net.mcreator.gildeddoom.init.GildedDoomModItems;
 import net.mcreator.gildeddoom.GildedDoomMod;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
@@ -50,8 +47,7 @@ public class DuckspawninpurgatoryProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (entity instanceof Skeleton && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))
-				&& (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(GildedDoomModItems.PURGATORY_AMALGAM)) : false)) {
+		if (entity instanceof Skeleton && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
@@ -69,8 +65,7 @@ public class DuckspawninpurgatoryProcedure {
 				}.getScore("SkeletonSouls", sourceentity) + 1));
 			}
 		}
-		if (entity instanceof Blaze && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))
-				&& (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(GildedDoomModItems.PURGATORY_AMALGAM)) : false)) {
+		if (entity instanceof Blaze && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
@@ -88,8 +83,7 @@ public class DuckspawninpurgatoryProcedure {
 				}.getScore("BlazeSouls", sourceentity) + 1));
 			}
 		}
-		if (entity instanceof Piglin && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))
-				&& (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(GildedDoomModItems.PURGATORY_AMALGAM)) : false)) {
+		if (entity instanceof Piglin && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();

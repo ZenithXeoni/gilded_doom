@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Free, at last",
-    "achievementDescription": "Escape the hellish prison using the Purgatory Amalgam, the item that sent you there in the first place.",
+    "achievementDescription": "Escape the hellish prison by ridding a chunk of the vermin inside of Purgatory",
     "achievementIcon": {
       "value": "CUSTOM:PurgatoryAmalgam"
     },
@@ -16,7 +16,7 @@
     "rewardRecipes": [],
     "rewardFunction": "No function",
     "rewardXP": 0,
-    "achievementType": "task",
+    "achievementType": "goal",
     "parent": {
       "value": "CUSTOM:PurgatoryBound"
     },

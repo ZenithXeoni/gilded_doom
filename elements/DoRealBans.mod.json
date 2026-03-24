@@ -4,7 +4,7 @@
   "definition": {
     "type": "Logic",
     "displayName": "Do Real Bans",
-    "description": "Decides weather Pending Death uses Real Bans + Purgatory Sending, Without this, purgatory will be inaccessable by normal means.",
+    "description": "Decides weather Pending Death uses Perma Bans + Purgatory Sending.. Purgatory will still be accessable via deathcurse overflow",
     "category": "PLAYER",
     "defaultValueLogic": true,
     "defaultValueNumber": 0

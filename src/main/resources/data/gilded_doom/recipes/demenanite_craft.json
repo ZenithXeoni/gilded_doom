@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gilded_doom:purgatory_stone"
+    },
+    {
+      "item": "gilded_doom:demonic_dust"
+    },
+    {
+      "item": "gilded_doom:demonic_dust"
+    }
+  ],
+  "result": {
+    "item": "gilded_doom:demenanite_ore",
+    "count": 1
+  }
+}

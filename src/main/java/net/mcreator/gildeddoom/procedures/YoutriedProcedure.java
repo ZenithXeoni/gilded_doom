@@ -55,7 +55,7 @@ public class YoutriedProcedure {
 			}
 		}.getScore("purgatory", entity) == 1 && !((ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension"))) == (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD))) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Oh no you dont."), false);
+				_player.displayClientMessage(Component.literal("\u00A74<???> Oh no you dont."), false);
 			PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
 		}
 	}

@@ -63,7 +63,7 @@ public class InPurgatoryProcedure {
 						return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 					return 0;
 				}
-			}.getScore("SkeletonSouls", entity)) + "/200")), false);
+			}.getScore("SkeletonSouls", entity)) + "/150")), false);
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(Component.literal(("Piglins: " + (new Object() {
 				public int getScore(String score, Entity _ent) {
@@ -73,7 +73,7 @@ public class InPurgatoryProcedure {
 						return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 					return 0;
 				}
-			}.getScore("PiglinSouls", entity)) + "/200")), false);
+			}.getScore("PiglinSouls", entity)) + "/100")), false);
 		if (entity instanceof Player _player && !_player.level.isClientSide())
 			_player.displayClientMessage(Component.literal("----------------------"), false);
 		if (new Object() {
@@ -151,7 +151,7 @@ public class InPurgatoryProcedure {
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 				return 0;
 			}
-		}.getScore("SkeletonSouls", entity) >= 200 && new Object() {
+		}.getScore("SkeletonSouls", entity) >= 150 && new Object() {
 			public int getScore(String score, Entity _ent) {
 				Scoreboard _sc = _ent.getLevel().getScoreboard();
 				Objective _so = _sc.getObjective(score);
@@ -159,7 +159,7 @@ public class InPurgatoryProcedure {
 					return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
 				return 0;
 			}
-		}.getScore("PiglinSouls", entity) >= 200) {
+		}.getScore("PiglinSouls", entity) >= 100) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("Your task is complete; Purgatory unbinds you, you are free to escape. right-clicking this again will send you back to the overworld at 0 100 0"), false);
 			{

@@ -48,6 +48,8 @@ public class BookOfDocumentationRightclickedProcedure {
 						false);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.CLEANSING_TOME) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal("\u00A7lThe Cleansing Tome, the ONLY way to escape Pending Death, made possible due to the collective mass of souls from the withers."), false);
+			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A76Death Curses"), false);
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A76--"), false);

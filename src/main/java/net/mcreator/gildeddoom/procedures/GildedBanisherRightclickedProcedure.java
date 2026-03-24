@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
@@ -73,7 +74,7 @@ public class GildedBanisherRightclickedProcedure {
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if (EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.SHORT_FUSE, itemstack) != 0) {
 			for (Entity entityiterator : new ArrayList<>(world.players())) {
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(GildedDoomModMobEffects.PENDING_DEATH)
+				if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(GildedDoomModMobEffects.PENDING_DEATH) : false) && (entityiterator instanceof LivingEntity _livEnt && _livEnt.hasEffect(GildedDoomModMobEffects.PENDING_DEATH)
 						? _livEnt.getEffect(GildedDoomModMobEffects.PENDING_DEATH).getDuration()
 						: 0) <= (world.getLevelData().getGameRules().getInt(GildedDoomModGameRules.PENDING_DEATH_TIME_IN_TICKS)) / 2) {
 					if (new Object() {
@@ -111,9 +112,13 @@ public class GildedBanisherRightclickedProcedure {
 							entityToSpawn.setVisualOnly(true);
 							_level.addFreshEntity(entityToSpawn);
 						}
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.5");
+						{
+							Entity _ent = entityiterator;
+							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+										_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 0.5");
+							}
+						}
 						{
 							Entity _ent = entityiterator;
 							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
@@ -321,6 +326,9 @@ public class GildedBanisherRightclickedProcedure {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										"tellraw @a {\"text\":\"No mortal shall escape the Gilded Embrace of Doom.\",\"italic\":true,\"color\":\"dark_red\"}");
+							if (entityiterator instanceof Player _player && !_player.level.isClientSide())
+								_player.displayClientMessage(
+										Component.literal("\u00A74 <???> That wasn't fair. I will give you another chance to live since your life was cut short. All I ask is for you to remove a chunk of the vermin inside of my land."), false);
 						}
 					}
 					if (new Object() {
