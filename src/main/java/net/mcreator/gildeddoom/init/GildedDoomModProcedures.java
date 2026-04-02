@@ -7,7 +7,6 @@ package net.mcreator.gildeddoom.init;
 import net.mcreator.gildeddoom.procedures.YoutriedProcedure;
 import net.mcreator.gildeddoom.procedures.UltimatePowerOnEffectActiveTickProcedure;
 import net.mcreator.gildeddoom.procedures.TrackingTomeRightclickedProcedure;
-import net.mcreator.gildeddoom.procedures.TomehittingProcedure;
 import net.mcreator.gildeddoom.procedures.ThornsProcedure;
 import net.mcreator.gildeddoom.procedures.ThereisnoescapeProcedure;
 import net.mcreator.gildeddoom.procedures.TheEchoFallExpirenceOnEffectActiveTickProcedure;
@@ -55,7 +54,6 @@ public class GildedDoomModProcedures {
 	public static void load() {
 		new AncientHammerLivingEntityIsHitWithToolProcedure();
 		new TheEchoFallExpirenceOnEffectActiveTickProcedure();
-		new TomehittingProcedure();
 		new HammerEnchantsProcedure();
 		new GildedContractRightclickedOnBlockProcedure();
 		new HellforgedHammerToolInHandTickProcedure();

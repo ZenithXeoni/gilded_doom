@@ -4,14 +4,18 @@
     {
       "rolls": 1,
       "entries": [
-      	{
+        {
           "type": "minecraft:item",
+          "conditions": [],
           "functions": [
             {
               "enchantments": [
-                "minecraft:soul_speed"
+                "minecraft:soul_speed",
+                "minecraft:fire_aspect",
+                "minecraft:fire_protection"
               ],
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:enchant_randomly",
+              "conditions": []
             }
           ],
           "name": "minecraft:book",
@@ -24,8 +28,23 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 1.0,
+                "min": 1,
+                "max": 2,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "gilded_doom:gilded_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1,
                 "type": "minecraft:uniform"
               }
             }
@@ -61,8 +80,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 9.0,
-                "max": 36.0,
+                "min": 9,
+                "max": 36,
                 "type": "minecraft:uniform"
               }
             }
@@ -71,28 +90,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 8.0,
-                "max": 16.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:quartz"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5.0,
-                "max": 12.0,
+                "min": 5,
+                "max": 12,
                 "type": "minecraft:uniform"
               }
             }
@@ -106,8 +110,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 6.0,
+                "min": 2,
+                "max": 6,
                 "type": "minecraft:uniform"
               }
             }
@@ -121,8 +125,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -136,8 +140,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 8.0,
-                "max": 24.0,
+                "min": 8,
+                "max": 24,
                 "type": "minecraft:uniform"
               }
             }
@@ -151,23 +155,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:fire_charge"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 40,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4.0,
-                "max": 10.0,
+                "min": 4,
+                "max": 10,
                 "type": "minecraft:uniform"
               }
             }
@@ -181,8 +170,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -196,8 +185,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 2.0,
+                "min": 1,
+                "max": 2,
                 "type": "minecraft:uniform"
               }
             }
@@ -211,8 +200,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -226,8 +215,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -241,8 +230,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -251,13 +240,13 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 1.0,
+                "min": 1,
+                "max": 1,
                 "type": "minecraft:uniform"
               }
             }
@@ -271,8 +260,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -286,8 +275,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -301,30 +290,30 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 22.0,
+                "min": 4,
+                "max": 22,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:bone"
         },
-	      {
+        {
           "type": "minecraft:item",
           "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:gunpowder"
         }
-      ]   
+      ]
     }
   ]
-} 
+}

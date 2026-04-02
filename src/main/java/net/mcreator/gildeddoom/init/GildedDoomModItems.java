@@ -34,6 +34,7 @@ import net.mcreator.gildeddoom.item.BrutalTomeItem;
 import net.mcreator.gildeddoom.item.BookOfGildedBanishmentItem;
 import net.mcreator.gildeddoom.item.BookOfDocumentationItem;
 import net.mcreator.gildeddoom.item.BloodGrapesItem;
+import net.mcreator.gildeddoom.item.AncientTomeItem;
 import net.mcreator.gildeddoom.item.AncientHammerItem;
 import net.mcreator.gildeddoom.GildedDoomMod;
 
@@ -66,7 +67,6 @@ public class GildedDoomModItems {
 	public static Item GILDED_BRUTE_CHESTPLATE;
 	public static Item GILDED_BRUTE_LEGGINGS;
 	public static Item GILDED_BRUTE_BOOTS;
-	public static Item TRACKING_TOME;
 	public static Item WARPED_AMALGAM;
 	public static Item FREE_ME;
 	public static Item CLEANSING_TOME;
@@ -91,6 +91,8 @@ public class GildedDoomModItems {
 	public static Item DEMONIC_DUST;
 	public static Item BOOK_OF_GILDED_BANISHMENT;
 	public static Item BOOK_OF_DOCUMENTATION;
+	public static Item TRACKING_TOME;
+	public static Item ANCIENT_TOME;
 
 	public static void load() {
 		IRON_HAMMER = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "iron_hammer"), new IronHammerItem());
@@ -128,7 +130,6 @@ public class GildedDoomModItems {
 		GILDED_BRUTE_CHESTPLATE = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "gilded_brute_chestplate"), new GildedBruteItem.Chestplate());
 		GILDED_BRUTE_LEGGINGS = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "gilded_brute_leggings"), new GildedBruteItem.Leggings());
 		GILDED_BRUTE_BOOTS = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "gilded_brute_boots"), new GildedBruteItem.Boots());
-		TRACKING_TOME = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "tracking_tome"), new TrackingTomeItem());
 		WARPED_AMALGAM = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "warped_amalgam"), new WarpedAmalgamItem());
 		FREE_ME = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "free_me"), new FreeMeItem());
 		CLEANSING_TOME = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "cleansing_tome"), new CleansingTomeItem());
@@ -167,5 +168,7 @@ public class GildedDoomModItems {
 		DEMONIC_DUST = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "demonic_dust"), new DemonicDustItem());
 		BOOK_OF_GILDED_BANISHMENT = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "book_of_gilded_banishment"), new BookOfGildedBanishmentItem());
 		BOOK_OF_DOCUMENTATION = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "book_of_documentation"), new BookOfDocumentationItem());
+		TRACKING_TOME = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "tracking_tome"), new TrackingTomeItem());
+		ANCIENT_TOME = Registry.register(Registry.ITEM, new ResourceLocation(GildedDoomMod.MODID, "ancient_tome"), new AncientTomeItem());
 	}
 }

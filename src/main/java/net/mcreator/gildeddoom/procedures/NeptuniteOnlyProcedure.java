@@ -22,8 +22,6 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
 
 import net.mcreator.gildeddoom.init.GildedDoomModMobEffects;
 import net.mcreator.gildeddoom.GildedDoomMod;
@@ -31,7 +29,6 @@ import net.mcreator.gildeddoom.GildedDoomMod;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 
 import java.util.Map;
-import java.util.Iterator;
 
 public class NeptuniteOnlyProcedure {
 
@@ -232,37 +229,28 @@ public class NeptuniteOnlyProcedure {
 													}.getScore("warpz", entity))));
 										}
 									}
-									if (entity instanceof ServerPlayer _player) {
-										Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("gilded_doom:freeatlast"));
-										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-										if (!_ap.isDone()) {
-											Iterator _iterator = _ap.getRemainingCriteria().iterator();
-											while (_iterator.hasNext())
-												_player.getAdvancements().award(_adv, (String) _iterator.next());
-										}
-									}
 									{
 										Entity _ent = entity;
 										Scoreboard _sc = _ent.getLevel().getScoreboard();
-										Objective _so = _sc.getObjective("DuckSouls");
+										Objective _so = _sc.getObjective("PiglinSouls");
 										if (_so == null)
-											_so = _sc.addObjective("DuckSouls", ObjectiveCriteria.DUMMY, Component.literal("DuckSouls"), ObjectiveCriteria.RenderType.INTEGER);
+											_so = _sc.addObjective("PiglinSouls", ObjectiveCriteria.DUMMY, Component.literal("PiglinSouls"), ObjectiveCriteria.RenderType.INTEGER);
 										_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
 									}
 									{
 										Entity _ent = entity;
 										Scoreboard _sc = _ent.getLevel().getScoreboard();
-										Objective _so = _sc.getObjective("WitherSouls");
+										Objective _so = _sc.getObjective("SkeletonSouls");
 										if (_so == null)
-											_so = _sc.addObjective("WitherSouls", ObjectiveCriteria.DUMMY, Component.literal("WitherSouls"), ObjectiveCriteria.RenderType.INTEGER);
+											_so = _sc.addObjective("SkeletonSouls", ObjectiveCriteria.DUMMY, Component.literal("SkeletonSouls"), ObjectiveCriteria.RenderType.INTEGER);
 										_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
 									}
 									{
 										Entity _ent = entity;
 										Scoreboard _sc = _ent.getLevel().getScoreboard();
-										Objective _so = _sc.getObjective("PiglinBruteSouls");
+										Objective _so = _sc.getObjective("BlazeSouls");
 										if (_so == null)
-											_so = _sc.addObjective("PiglinBruteSouls", ObjectiveCriteria.DUMMY, Component.literal("PiglinBruteSouls"), ObjectiveCriteria.RenderType.INTEGER);
+											_so = _sc.addObjective("BlazeSouls", ObjectiveCriteria.DUMMY, Component.literal("BlazeSouls"), ObjectiveCriteria.RenderType.INTEGER);
 										_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(0);
 									}
 								} else {
@@ -294,15 +282,13 @@ public class NeptuniteOnlyProcedure {
 					ServerTickEvents.END_SERVER_TICK.register((server) -> {
 						this.ticks++;
 						if (this.ticks == 60) {
-							{
-								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in minecraft:overworld run spawnpoint @s ~ ~ ~");
-								}
+							if (entity instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.setRespawnPosition(_serverPlayer.level.dimension(), new BlockPos(x, y, z), _serverPlayer.getYRot(), true, false);
+							if (!((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.OVERWORLD)) {
+								(itemstack).shrink(1);
 							}
 							if (entity instanceof Player _player && !_player.level.isClientSide())
-								_player.displayClientMessage(Component.literal("Respawn Set (In Overworld)"), false);
+								_player.displayClientMessage(Component.literal("Respawn Set"), false);
 							return;
 						}
 					});

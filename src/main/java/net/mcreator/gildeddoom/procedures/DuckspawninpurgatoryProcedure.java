@@ -3,10 +3,15 @@ package net.mcreator.gildeddoom.procedures;
 import net.minecraft.world.scores.criteria.ObjectiveCriteria;
 import net.minecraft.world.scores.Scoreboard;
 import net.minecraft.world.scores.Objective;
+import net.minecraft.world.entity.monster.piglin.PiglinBrute;
 import net.minecraft.world.entity.monster.piglin.Piglin;
+import net.minecraft.world.entity.monster.ZombifiedPiglin;
+import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
@@ -65,6 +70,24 @@ public class DuckspawninpurgatoryProcedure {
 				}.getScore("SkeletonSouls", sourceentity) + 1));
 			}
 		}
+		if (entity instanceof WitherSkeleton && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
+			{
+				Entity _ent = sourceentity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("SkeletonSouls");
+				if (_so == null)
+					_so = _sc.addObjective("SkeletonSouls", ObjectiveCriteria.DUMMY, Component.literal("SkeletonSouls"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
+					public int getScore(String score, Entity _ent) {
+						Scoreboard _sc = _ent.getLevel().getScoreboard();
+						Objective _so = _sc.getObjective(score);
+						if (_so != null)
+							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+						return 0;
+					}
+				}.getScore("SkeletonSouls", sourceentity) + 1));
+			}
+		}
 		if (entity instanceof Blaze && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
 			{
 				Entity _ent = sourceentity;
@@ -84,6 +107,42 @@ public class DuckspawninpurgatoryProcedure {
 			}
 		}
 		if (entity instanceof Piglin && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
+			{
+				Entity _ent = sourceentity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("PiglinSouls");
+				if (_so == null)
+					_so = _sc.addObjective("PiglinSouls", ObjectiveCriteria.DUMMY, Component.literal("PiglinSouls"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
+					public int getScore(String score, Entity _ent) {
+						Scoreboard _sc = _ent.getLevel().getScoreboard();
+						Objective _so = _sc.getObjective(score);
+						if (_so != null)
+							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+						return 0;
+					}
+				}.getScore("PiglinSouls", sourceentity) + 1));
+			}
+		}
+		if (entity instanceof PiglinBrute && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension")))) {
+			{
+				Entity _ent = sourceentity;
+				Scoreboard _sc = _ent.getLevel().getScoreboard();
+				Objective _so = _sc.getObjective("PiglinSouls");
+				if (_so == null)
+					_so = _sc.addObjective("PiglinSouls", ObjectiveCriteria.DUMMY, Component.literal("PiglinSouls"), ObjectiveCriteria.RenderType.INTEGER);
+				_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore((int) (new Object() {
+					public int getScore(String score, Entity _ent) {
+						Scoreboard _sc = _ent.getLevel().getScoreboard();
+						Objective _so = _sc.getObjective(score);
+						if (_so != null)
+							return _sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).getScore();
+						return 0;
+					}
+				}.getScore("PiglinSouls", sourceentity) + 1));
+			}
+		}
+		if (entity instanceof ZombifiedPiglin && (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("gilded_doom:purgatory_dimension"))) && Mth.nextInt(RandomSource.create(), 1, 4) == 1) {
 			{
 				Entity _ent = sourceentity;
 				Scoreboard _sc = _ent.getLevel().getScoreboard();

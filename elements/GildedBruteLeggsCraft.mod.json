@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_LEGGINGS"
+      "value": "TAG:gilded_doom:bruteleggings"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:GildedIngot"

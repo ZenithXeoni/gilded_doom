@@ -1,0 +1,21 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.DIAMOND_BOOTS"
+      },
+      {
+        "value": "Blocks.BEDROCK"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "bruteboots",
+    "namespace": "mod"
+  }
+}

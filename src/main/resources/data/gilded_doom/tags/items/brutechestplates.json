@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_chestplate",
+    "wandering_wares:scrap_armor_chestplate"
+  ]
+}

@@ -4,6 +4,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -146,5 +147,16 @@ public class SoulforgedHitProcedure {
 			}
 			HammerEnchantsProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("entity", entity).put("sourceentity", sourceentity).build());
 		}
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.WITHERING_TOME
+				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.SOULFORGED_HAMMER) {
+			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 1));
+			if (sourceentity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1));
+		}
+		if (entity instanceof Player _player)
+			_player.getCooldowns().addCooldown(GildedDoomModItems.GILDED_BRUTE_CHESTPLATE, 100);
+		if (entity instanceof Player _player)
+			_player.getCooldowns().addCooldown(GildedDoomModItems.GILDED_BRUTE_LEGGINGS, 100);
 	}
 }

@@ -139,7 +139,7 @@ public class ThornsProcedure {
 			}
 		}.getScore("deathcurse", entity) == 3 && Mth.nextInt(RandomSource.create(), 1, 4) == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.THE_ECHO_FALL_EXPERIENCE, 300, 0));
+				_entity.addEffect(new MobEffectInstance(GildedDoomModMobEffects.THE_ECHO_FALL_EXPERIENCE, 80, 0));
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 1));
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())

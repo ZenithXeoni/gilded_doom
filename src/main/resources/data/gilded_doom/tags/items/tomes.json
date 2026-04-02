@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gilded_doom:tracking_tome",
+    "gilded_doom:immunity_tome",
+    "gilded_doom:brutal_tome",
+    "gilded_doom:cleansing_tome",
+    "gilded_doom:ancient_tome"
+  ]
+}

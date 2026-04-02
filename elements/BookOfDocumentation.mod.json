@@ -2,9 +2,9 @@
   "_fv": 43,
   "_type": "tool",
   "definition": {
-    "renderType": 1,
-    "texture": "shittycontract",
-    "customModelName": "book:default",
+    "renderType": 0,
+    "texture": "book_of_documentation",
+    "customModelName": "Normal",
     "name": "Book of Documentation",
     "specialInfo": [
       "Hold this with an Item in your offhand",

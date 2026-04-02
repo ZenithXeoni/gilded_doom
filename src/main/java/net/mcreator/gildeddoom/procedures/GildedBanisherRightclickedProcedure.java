@@ -56,11 +56,6 @@ public class GildedBanisherRightclickedProcedure {
 				GildedDoomMod.LOGGER.warn("Failed to load dependency z for procedure GildedBanisherRightclicked!");
 			return;
 		}
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				GildedDoomMod.LOGGER.warn("Failed to load dependency entity for procedure GildedBanisherRightclicked!");
-			return;
-		}
 		if (dependencies.get("itemstack") == null) {
 			if (!dependencies.containsKey("itemstack"))
 				GildedDoomMod.LOGGER.warn("Failed to load dependency itemstack for procedure GildedBanisherRightclicked!");
@@ -70,7 +65,6 @@ public class GildedBanisherRightclickedProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if (EnchantmentHelper.getItemEnchantmentLevel(GildedDoomModEnchantments.SHORT_FUSE, itemstack) != 0) {
 			for (Entity entityiterator : new ArrayList<>(world.players())) {
@@ -320,7 +314,79 @@ public class GildedBanisherRightclickedProcedure {
 								entityToSpawn.setVisualOnly(true);
 								_level.addFreshEntity(entityToSpawn);
 							}
-							PurgatoryAmalgamRightclickedProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("entity", entity).build());
+							{
+								Entity _ent = entityiterator;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in gilded_doom:purgatory_dimension run fill -5 69 -5 5 69 5 gilded_doom:purgatory_nylium");
+								}
+							}
+							{
+								Entity _ent = entityiterator;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in gilded_doom:purgatory_dimension run fill -5 70 -5 5 75 5 air");
+								}
+							}
+							{
+								Entity _ent = entityiterator;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in gilded_doom:purgatory_dimension run setblock 1 70 0 minecraft:crafting_table");
+								}
+							}
+							{
+								Entity _ent = entityiterator;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in gilded_doom:purgatory_dimension run tp @s 0 70 0");
+								}
+							}
+							{
+								Entity _ent = entityiterator;
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "/execute in gilded_doom:purgatory_dimension run spawnpoint @s 0 70 0");
+								}
+							}
+							new Object() {
+								private int ticks = 0;
+
+								public void startDelay(LevelAccessor world) {
+									ServerTickEvents.END_SERVER_TICK.register((server) -> {
+										this.ticks++;
+										if (this.ticks == 140) {
+											{
+												Entity _ent = entityiterator;
+												if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+													_ent.getServer().getCommands()
+															.performPrefixedCommand(
+																	new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+																			_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+																	"/execute in gilded_doom:purgatory_dimension run fill -5 69 -5 5 69 5 gilded_doom:purgatory_nylium");
+												}
+											}
+											{
+												Entity _ent = entityiterator;
+												if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+													_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+															_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+															"/execute in gilded_doom:purgatory_dimension run fill -5 70 -5 5 75 5 air");
+												}
+											}
+											{
+												Entity _ent = entityiterator;
+												if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+													_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+															_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+															"/execute in gilded_doom:purgatory_dimension run setblock 1 70 0 minecraft:crafting_table");
+												}
+											}
+											return;
+										}
+									});
+								}
+							}.startDelay(world);
 							if (world instanceof Level _level && !_level.isClientSide())
 								_level.explode(null, x, y, z, 10, Explosion.BlockInteraction.DESTROY);
 							if (world instanceof ServerLevel _level)

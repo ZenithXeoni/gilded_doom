@@ -66,7 +66,7 @@ public class BookOfDocumentationRightclickedProcedure {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A76--"), false);
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76Currently there is no cure obtainable, so whatever you are doing, must be worth it."), false);
+				_player.displayClientMessage(Component.literal("\u00A76Currently the only cure is to go Purgatory and escape, so whatever you are doing, must be worth it."), false);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == GildedDoomModItems.BOOK_OF_GILDED_BANISHMENT) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A76Myzkelon"), false);

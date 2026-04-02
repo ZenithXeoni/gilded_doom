@@ -89,7 +89,10 @@ public class GildedContractRightclickedOnBlockProcedure {
 					itemstack.getOrCreateTag().putBoolean("BanBlocked", true);
 					itemstack.getOrCreateTag().putBoolean("KillBlocked", true);
 					itemstack.getOrCreateTag().putBoolean("ReturnBlocked", true);
+					itemstack.getOrCreateTag().putInt("CustomModelData", 2);
 					itemstack.getOrCreateTag().putBoolean("CustomSoul", true);
+					itemstack.getOrCreateTag().putBoolean("SoulLocked", true);
+					itemstack.getOrCreateTag().putString("LockedBy", "Myzkelon.");
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z), GildedDoomModSounds.ULTIMATE_POWER_CHARGE_UP, SoundSource.NEUTRAL, 1, 1);
@@ -246,6 +249,7 @@ public class GildedContractRightclickedOnBlockProcedure {
 				itemstack.getOrCreateTag().putBoolean("BanBlocked", true);
 				itemstack.getOrCreateTag().putBoolean("ReturnBlocked", true);
 				itemstack.getOrCreateTag().putBoolean("CustomSoul", true);
+				itemstack.getOrCreateTag().putInt("CustomModelData", 1);
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
 					_player.displayClientMessage(Component.literal("<???> By signing this contract you are aware that your soul will be controlled by this contract"), false);

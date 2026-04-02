@@ -72,7 +72,7 @@ public class FreeMeRightclickedProcedure {
 			Objective _so = _sc.getObjective("BlazeSouls");
 			if (_so == null)
 				_so = _sc.addObjective("BlazeSouls", ObjectiveCriteria.DUMMY, Component.literal("BlazeSouls"), ObjectiveCriteria.RenderType.INTEGER);
-			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(200);
+			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(999);
 		}
 		{
 			Entity _ent = entity;
@@ -80,7 +80,7 @@ public class FreeMeRightclickedProcedure {
 			Objective _so = _sc.getObjective("SkeletonSouls");
 			if (_so == null)
 				_so = _sc.addObjective("SkeletonSouls", ObjectiveCriteria.DUMMY, Component.literal("SkeletonSouls"), ObjectiveCriteria.RenderType.INTEGER);
-			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(200);
+			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(999);
 		}
 		{
 			Entity _ent = entity;
@@ -88,7 +88,7 @@ public class FreeMeRightclickedProcedure {
 			Objective _so = _sc.getObjective("PiglinSouls");
 			if (_so == null)
 				_so = _sc.addObjective("PiglinSouls", ObjectiveCriteria.DUMMY, Component.literal("PiglinSouls"), ObjectiveCriteria.RenderType.INTEGER);
-			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(200);
+			_sc.getOrCreatePlayerScore(_ent.getScoreboardName(), _so).setScore(999);
 		}
 		(itemstack).shrink(1);
 	}

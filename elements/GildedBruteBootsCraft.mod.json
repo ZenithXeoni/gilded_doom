@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_BOOTS"
+      "value": "TAG:gilded_doom:bruteboots"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:GildedIngot"

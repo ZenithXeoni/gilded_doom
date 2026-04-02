@@ -2,9 +2,9 @@
   "_fv": 43,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "shittycontract",
-    "customModelName": "immunity_tome:default",
+    "renderType": 0,
+    "texture": "immunity_tome",
+    "customModelName": "Normal",
     "name": "Immunity Tome",
     "rarity": "UNCOMMON",
     "creativeTab": {

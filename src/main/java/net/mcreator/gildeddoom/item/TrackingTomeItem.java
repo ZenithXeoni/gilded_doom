@@ -14,7 +14,7 @@ import net.mcreator.gildeddoom.init.GildedDoomModTabs;
 
 public class TrackingTomeItem extends Item {
 	public TrackingTomeItem() {
-		super(new Item.Properties().tab(GildedDoomModTabs.TAB_GILDED_DOOM).stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(GildedDoomModTabs.TAB_GILDED_DOOM).stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:diamond_helmet"
+    "tag": "gilded_doom:brutehelmets"
   },
   "addition": {
     "item": "gilded_doom:gilded_ingot"

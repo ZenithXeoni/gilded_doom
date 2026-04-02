@@ -77,6 +77,7 @@ public class EngraveSoulOnDeathProcedure {
 			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("KillBlocked", true);
 			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("BanBlocked", true);
 			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putString("PlayerSoul", entity.getScoreboardName());
+			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putInt("CustomModelData", 1);
 			entity.setSprinting(false);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

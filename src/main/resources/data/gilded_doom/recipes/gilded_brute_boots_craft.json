@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:diamond_boots"
+    "tag": "gilded_doom:bruteboots"
   },
   "addition": {
     "item": "gilded_doom:gilded_ingot"

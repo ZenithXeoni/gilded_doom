@@ -1,0 +1,30 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BrutalTome"
+      },
+      {
+        "value": "CUSTOM:ImmunityTome"
+      },
+      {
+        "value": "CUSTOM:CleansingTome"
+      },
+      {
+        "value": "CUSTOM:TrackingTome"
+      },
+      {
+        "value": "CUSTOM:AncientTome"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "tomes",
+    "namespace": "mod"
+  }
+}

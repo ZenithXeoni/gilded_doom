@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "Items.DIAMOND_CHESTPLATE"
+      "value": "TAG:gilded_doom:brutechestplates"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:GildedIngot"

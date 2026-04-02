@@ -1,0 +1,30 @@
+{
+  "_fv": 43,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:AncientHammer"
+      },
+      {
+        "value": "CUSTOM:IronHammer"
+      },
+      {
+        "value": "CUSTOM:HellforgedHammer"
+      },
+      {
+        "value": "CUSTOM:SoulforgedHammer"
+      },
+      {
+        "value": "CUSTOM:GildedBanisher"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "hammers",
+    "namespace": "mod"
+  }
+}

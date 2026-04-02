@@ -1,6 +1,7 @@
 
 package net.mcreator.gildeddoom.item;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
@@ -59,7 +60,6 @@ public abstract class GildedBruteItem extends ArmorItem {
 			public String getName() {
 				return "gilded_brute_armor_";
 			}
-
 			@Override
 			public float getToughness() {
 				return 3f;

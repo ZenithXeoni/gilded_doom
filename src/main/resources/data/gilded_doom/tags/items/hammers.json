@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gilded_doom:gilded_banisher",
+    "gilded_doom:hellforged_hammer",
+    "gilded_doom:iron_hammer",
+    "gilded_doom:ancient_hammer",
+    "gilded_doom:soulforged_hammer"
+  ]
+}

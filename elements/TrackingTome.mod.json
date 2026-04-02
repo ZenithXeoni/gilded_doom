@@ -2,15 +2,15 @@
   "_fv": 43,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "soul_scrap",
-    "customModelName": "tracking_tome:default",
+    "renderType": 0,
+    "texture": "tracking_tome",
+    "customModelName": "Normal",
     "name": "Tracking Tome",
-    "rarity": "RARE",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:GildedDoom"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
